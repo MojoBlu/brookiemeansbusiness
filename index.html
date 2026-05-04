@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brookie Means Business — Persuasion Literacy for Women in Business</title>
+  <meta name="description" content="You were handed a script. Nobody mentioned you could put it down. Brookie Means Business helps women rethinking the life they were told to want spot persuasion in real time — so they can make clearer decisions about how to live, work, and relate." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700;1,9..144,900&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- AEO: Person + FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://brookiemeansbusiness.com/#brookie",
+        "name": "Brookie",
+        "jobTitle": "Persuasion Literacy Educator",
+        "description": "Brookie helps women rethinking the life they were told to want spot persuasion in real time — so they can make clearer decisions about how to live, work, and relate. Most people are operating inside invisible systems they didn't choose. Persuasion literacy changes that.",
+        "url": "https://brookiemeansbusiness.com",
+        "sameAs": [
+          "https://instagram.com/brookiemeansbusiness",
+          "https://linkedin.com/in/brookiemeansbusiness"
+        ],
+        "knowsAbout": ["persuasion literacy", "invisible systems", "decision-making", "marketing ethics", "consumer protection", "ethical influence"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://brookiemeansbusiness.com/#website",
+        "url": "https://brookiemeansbusiness.com",
+        "name": "Brookie Means Business",
+        "description": "Persuasion literacy for women rethinking the life they were told to want"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is persuasion literacy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Persuasion literacy is the ability to recognize, understand, and critically evaluate the persuasion tactics used in marketing, relationships, workplaces, and culture — so you can make clearer decisions about how to live, work, and relate, rather than simply responding to invisible systems you didn't choose."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Second Look?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Second Look is a web app that analyzes sales pages to identify persuasion tactics before you buy. It's a one-time flat fee for a set number of analyses, built for buyers who want clarity before they commit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is Brookie Means Business for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Brookie Means Business is for women who are rethinking the life they were told to want. If you've ever felt pressure from a sales page, a relationship, a workplace, or a culture that seemed to know exactly which buttons to push — this is for you. Most people are operating inside invisible systems they didn't choose. Persuasion literacy helps you see them."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I learn to spot manipulative marketing tactics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Brookie Means Business publishes weekly articles on persuasion literacy, including how to identify false urgency, emotional manipulation, social proof abuse, and other common tactics used in online marketing."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================================
+       CSS CUSTOM PROPERTIES
+    ============================================ */
+    :root {
+      --black: #1a2e1f;
+      --white: #f5f2ee;
+      --cream: #e8e4da;
+      --ink: #1a2e1f;
+      --accent: #c8441a;
+      --accent-light: #e8601a;
+      --mid: #5a6b5d;
+      --border: rgba(26,46,31,0.14);
+
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --font-mono: 'DM Mono', monospace;
+
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 2rem;
+      --space-lg: 4rem;
+      --space-xl: 7rem;
+
+      --max-width: 1200px;
+      --reading-width: 680px;
+    }
+
+    /* ============================================
+       RESET & BASE
+    ============================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--white);
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ============================================
+       TYPOGRAPHY SCALE
+    ============================================ */
+    .display-xl {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 14vw, 9rem);
+      font-weight: 900;
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+    }
+
+    .display-lg {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 8vw, 5.5rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .display-md {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    /* ============================================
+       LAYOUT UTILITIES
+    ============================================ */
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .section {
+      padding: var(--space-lg) 0;
+    }
+
+    .section--xl {
+      padding: var(--space-xl) 0;
+    }
+
+    /* ============================================
+       NAV
+    ============================================ */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1.1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+      transition: background 0.3s ease, backdrop-filter 0.3s ease;
+    }
+
+    .nav.scrolled {
+      background: rgba(245, 242, 238, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav__logo {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.05rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .nav__links {
+      display: none;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav__links a {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink);
+      transition: color 0.2s;
+    }
+
+    .nav__links a:hover { color: var(--accent); }
+
+    .nav__cta {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: var(--ink);
+      color: var(--white);
+      padding: 0.55rem 1.1rem;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+
+    .nav__cta:hover { background: var(--accent); }
+
+    /* ============================================
+       HERO
+    ============================================ */
+    .hero {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 1.25rem 3rem;
+      background: var(--black);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(245,242,238,0.5);
+      margin-bottom: 1rem;
+    }
+
+    .hero__name {
+      font-family: var(--font-display);
+      font-size: clamp(5rem, 22vw, 14rem);
+      font-weight: 900;
+      line-height: 0.85;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      margin-bottom: 0.15em;
+    }
+
+    .hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 3.5vw, 1.8rem);
+      font-weight: 400;
+      font-style: italic;
+      color: rgba(245,242,238,0.7);
+      line-height: 1.3;
+      max-width: 520px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero__title em {
+      font-style: normal;
+      color: var(--white);
+    }
+
+    .hero__cta-row {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.9rem 1.8rem;
+      border-radius: 2px;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn--primary {
+      background: var(--accent);
+      color: var(--white);
+    }
+    .btn--primary:hover { background: var(--accent-light); }
+
+    .btn--ghost {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(245,242,238,0.3);
+    }
+    .btn--ghost:hover {
+      border-color: var(--white);
+      background: rgba(245,242,238,0.08);
+    }
+
+    .btn--dark {
+      background: var(--ink);
+      color: var(--white);
+    }
+    .btn--dark:hover { background: var(--accent); }
+
+    /* Decorative hero grain overlay */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      opacity: 0.4;
+    }
+
+    /* ============================================
+       MARQUEE / TICKER
+    ============================================ */
+    .marquee-wrap {
+      overflow: hidden;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.75rem 0;
+      border-top: 1px solid var(--accent);
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 28s linear infinite;
+    }
+
+    .marquee-track span {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 0 2.5rem;
+    }
+
+    .marquee-track span::after {
+      content: '✦';
+      margin-left: 2.5rem;
+      opacity: 0.5;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ============================================
+       INTRO / MULTI-HYPHENATE
+    ============================================ */
+    .intro {
+      background: var(--white);
+      padding: var(--space-lg) 0;
+    }
+
+    .intro__label {
+      margin-bottom: 1.5rem;
+    }
+
+    .intro__name-stack {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 10vw, 6.5rem);
+      font-weight: 900;
+      line-height: 0.88;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+    }
+
+    .intro__roles {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 2.8vw, 1.4rem);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--mid);
+      line-height: 1.7;
+      max-width: 560px;
+      margin-bottom: 2rem;
+    }
+
+    .intro__roles strong {
+      font-style: normal;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .intro__tagline {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--mid);
+      max-width: var(--reading-width);
+      line-height: 1.7;
+    }
+
+    /* ============================================
+       QUICK LINKS
+    ============================================ */
+    .quick-links {
+      background: var(--cream);
+      padding: var(--space-md) 0;
+    }
+
+    .quick-links__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .quick-link-item {
+      background: var(--cream);
+      padding: 1.6rem 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+
+    .quick-link-item:hover {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .quick-link-item:hover .quick-link-item__arrow { color: var(--accent); }
+
+    .quick-link-item__label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 0.2rem;
+      opacity: 0.5;
+    }
+
+    .quick-link-item__title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .quick-link-item__arrow {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      transition: color 0.2s;
+    }
+
+    /* ============================================
+       MISSION
+    ============================================ */
+    .mission {
+      background: var(--ink);
+      color: var(--white);
+      padding: var(--space-xl) 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mission__number {
+      font-family: var(--font-display);
+      font-size: clamp(8rem, 30vw, 20rem);
+      font-weight: 900;
+      line-height: 1;
+      color: rgba(255,255,255,0.04);
+      position: absolute;
+      top: -1rem;
+      right: -1rem;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .mission__label { margin-bottom: 2rem; color: rgba(245,242,238,0.4); }
+
+    .mission__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 7vw, 4.5rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 2rem;
+    }
+
+    .mission__headline em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .mission__body {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: rgba(245,242,238,0.75);
+      max-width: 540px;
+      margin-bottom: 2.5rem;
+    }
+
+    .mission__body strong { color: var(--white); font-weight: 500; }
+
+    /* ============================================
+       BELIEFS
+    ============================================ */
+    .beliefs {
+      background: var(--white);
+      padding: var(--space-xl) 0;
+    }
+
+    .beliefs__header {
+      margin-bottom: 3rem;
+    }
+
+    .beliefs__list {
+      list-style: none;
+      border-top: 1px solid var(--border);
+    }
+
+    .belief-item {
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      gap: 1rem;
+      align-items: start;
+      padding: 1.6rem 0;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    .belief-item:hover { background: var(--cream); margin: 0 -1.25rem; padding-left: 1.25rem; padding-right: 1.25rem; }
+
+    .belief-num {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      padding-top: 0.35rem;
+    }
+
+    .belief-text {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    .belief-text em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--mid);
+    }
+
+    /* ============================================
+       SECOND LOOK FEATURE
+    ============================================ */
+    .second-look {
+      background: var(--cream);
+      padding: var(--space-xl) 0;
+    }
+
+    .second-look__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .second-look__kicker {
+      margin-bottom: 1rem;
+    }
+
+    .second-look__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 8vw, 5rem);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    .second-look__body {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--mid);
+      max-width: 480px;
+      margin-bottom: 2rem;
+    }
+
+    .second-look__body strong { color: var(--ink); }
+
+    .second-look__card {
+      background: var(--ink);
+      color: var(--white);
+      padding: 2.5rem 2rem;
+      border-radius: 4px;
+    }
+
+    .second-look__card-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+    }
+
+    .second-look__card-title {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+
+    .second-look__card-desc {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: rgba(245,242,238,0.7);
+      margin-bottom: 1.8rem;
+    }
+
+    .second-look__features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+
+    .second-look__features li {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      color: rgba(245,242,238,0.6);
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .second-look__features li::before {
+      content: '→';
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ============================================
+       SOCIAL PROOF
+    ============================================ */
+    .proof {
+      background: var(--white);
+      padding: var(--space-lg) 0;
+    }
+
+    .proof__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .proof__item {
+      background: var(--white);
+      padding: 2rem 1.5rem;
+    }
+
+    .proof__quote {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 3vw, 1.3rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.5;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .proof__quote strong { font-style: normal; font-weight: 700; }
+
+    .proof__attribution {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    /* ============================================
+       ABOUT STRIP
+    ============================================ */
+    .about-strip {
+      background: var(--cream);
+      padding: var(--space-lg) 0;
+    }
+
+    .about-strip__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .about-strip__label { margin-bottom: 1rem; }
+
+    .about-strip__text {
+      font-family: var(--font-display);
+      font-size: clamp(1.15rem, 3.5vw, 1.55rem);
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--ink);
+    }
+
+    .about-strip__text em { font-style: italic; color: var(--mid); }
+
+    .about-strip__link {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 2px;
+      transition: gap 0.2s;
+    }
+    .about-strip__link:hover { gap: 0.9rem; }
+
+    /* ============================================
+       EMAIL CTA
+    ============================================ */
+    .email-cta {
+      background: var(--black);
+      color: var(--white);
+      padding: var(--space-xl) 0;
+      text-align: center;
+    }
+
+    .email-cta__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .email-cta__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 9vw, 6rem);
+      font-weight: 900;
+      line-height: 0.92;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    .email-cta__headline em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .email-cta__sub {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: rgba(245,242,238,0.6);
+      max-width: 440px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .email-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .email-form input {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      padding: 0.9rem 1.2rem;
+      background: rgba(245,242,238,0.08);
+      border: 1px solid rgba(245,242,238,0.2);
+      color: var(--white);
+      border-radius: 2px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .email-form input::placeholder { color: rgba(245,242,238,0.3); }
+    .email-form input:focus { border-color: var(--accent); }
+
+    .email-form .btn {
+      width: 100%;
+      text-align: center;
+      font-size: 0.72rem;
+    }
+
+    .email-form__note {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: rgba(245,242,238,0.3);
+      text-align: center;
+      margin-top: 0.25rem;
+    }
+
+    /* ============================================
+       BLOG PREVIEW
+    ============================================ */
+    .blog-preview {
+      background: var(--white);
+      padding: var(--space-lg) 0;
+    }
+
+    .blog-preview__header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .blog-preview__see-all {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 2px;
+    }
+
+    .blog-preview__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .blog-card {
+      background: var(--white);
+      padding: 1.8rem 1.5rem;
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+
+    .blog-card:hover { background: var(--cream); }
+
+    .blog-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .blog-card__tag {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(200,68,26,0.1);
+      padding: 0.2rem 0.5rem;
+      border-radius: 2px;
+    }
+
+    .blog-card__date {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: var(--mid);
+    }
+
+    .blog-card__title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.6rem;
+      color: var(--ink);
+    }
+
+    .blog-card__excerpt {
+      font-size: 0.88rem;
+      color: var(--mid);
+      line-height: 1.6;
+    }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    .footer {
+      background: var(--ink);
+      color: var(--white);
+      padding: var(--space-lg) 0 2rem;
+    }
+
+    .footer__top {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(245,242,238,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .footer__brand-name {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer__brand-desc {
+      font-size: 0.9rem;
+      color: rgba(245,242,238,0.5);
+      line-height: 1.6;
+      max-width: 300px;
+    }
+
+    .footer__nav-label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(245,242,238,0.3);
+      margin-bottom: 1rem;
+    }
+
+    .footer__nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer__nav-links a {
+      font-size: 0.9rem;
+      color: rgba(245,242,238,0.6);
+      transition: color 0.2s;
+    }
+
+    .footer__nav-links a:hover { color: var(--white); }
+
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer__copy {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: rgba(245,242,238,0.25);
+    }
+
+    .footer__social {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer__social a {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(245,242,238,0.4);
+      transition: color 0.2s;
+    }
+
+    .footer__social a:hover { color: var(--accent); }
+
+    /* ============================================
+       SCROLL ANIMATIONS
+    ============================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* ============================================
+       DESKTOP BREAKPOINTS
+    ============================================ */
+    @media (min-width: 640px) {
+      .quick-links__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .proof__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .blog-preview__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .nav__links { display: flex; }
+
+      .quick-links__grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .second-look__inner {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+      }
+
+      .about-strip__inner {
+        grid-template-columns: 1fr 1.4fr;
+        align-items: center;
+      }
+
+      .footer__top {
+        grid-template-columns: 1.5fr 1fr 1fr;
+      }
+
+      .footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .blog-preview__grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .email-form {
+        flex-direction: row;
+      }
+
+      .email-form input { flex: 1; }
+      .email-form .btn { width: auto; flex-shrink: 0; }
+    }
+
+    @media (min-width: 1200px) {
+      .hero__name {
+        font-size: clamp(7rem, 16vw, 14rem);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================
+       NAV
+  ============================================ -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a href="/" class="nav__logo">BMB</a>
+    <ul class="nav__links">
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/second-look.html">Second Look</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <a href="#newsletter" class="nav__cta">Get the newsletter</a>
+  </nav>
+
+  <!-- ============================================
+       HERO
+  ============================================ -->
+  <section class="hero" aria-label="Introduction">
+    <p class="hero__eyebrow">Brookie Means Business</p>
+    <h1 class="hero__name">BROOKIE</h1>
+    <p class="hero__title">
+      You were handed a script.<br>
+      <em>Nobody mentioned you could put it down.</em>
+    </p>
+    <div class="hero__cta-row">
+      <a href="#newsletter" class="btn btn--primary">Get the newsletter</a>
+      <a href="/second-look.html" class="btn btn--ghost">Try Second Look →</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       MARQUEE
+  ============================================ -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Persuasion literacy for women rethinking the life they were told to want</span>
+      <span>Most people are operating inside invisible systems they didn't choose</span>
+      <span>See the system. Make your own call.</span>
+      <span>Persuasion literacy for women rethinking the life they were told to want</span>
+      <span>Most people are operating inside invisible systems they didn't choose</span>
+      <span>See the system. Make your own call.</span>
+      <span>Persuasion literacy for women rethinking the life they were told to want</span>
+      <span>Most people are operating inside invisible systems they didn't choose</span>
+      <span>See the system. Make your own call.</span>
+      <span>Persuasion literacy for women rethinking the life they were told to want</span>
+      <span>Most people are operating inside invisible systems they didn't choose</span>
+      <span>See the system. Make your own call.</span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       INTRO / MULTI-HYPHENATE
+  ============================================ -->
+  <section class="intro section" aria-label="About Brookie">
+    <div class="container">
+      <p class="label intro__label reveal">Meet Brookie</p>
+      <div class="intro__name-stack reveal reveal-delay-1">BROOKIE<br>MEANS<br>BUSINESS</div>
+      <p class="intro__roles reveal reveal-delay-2">
+        <strong>Persuasion Literacy Educator,</strong>
+        Event &amp; Hockey Photographer,
+        <strong>Founder of Second Look™,</strong>
+        helping women rethink the life they were told to want
+      </p>
+      <p class="intro__tagline reveal reveal-delay-3">
+        Most people are operating inside invisible systems they didn't choose — in their buying decisions, their work, their relationships, and their sense of what's even possible. I create content to help women spot persuasion in real time, so they can make clearer decisions about how to live, work, and relate.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       QUICK LINKS
+  ============================================ -->
+  <section class="quick-links" aria-label="Quick navigation">
+    <div class="container">
+      <p class="label" style="margin-bottom:1.2rem">Quick links</p>
+      <div class="quick-links__grid">
+        <a href="/second-look.html" class="quick-link-item">
+          <div>
+            <span class="quick-link-item__label">The Tool</span>
+            <span class="quick-link-item__title">Second Look™</span>
+          </div>
+          <span class="quick-link-item__arrow">→</span>
+        </a>
+        <a href="/blog/" class="quick-link-item">
+          <div>
+            <span class="quick-link-item__label">Weekly Writing</span>
+            <span class="quick-link-item__title">The Blog</span>
+          </div>
+          <span class="quick-link-item__arrow">→</span>
+        </a>
+        <a href="#newsletter" class="quick-link-item">
+          <div>
+            <span class="quick-link-item__label">Stay In The Loop</span>
+            <span class="quick-link-item__title">The Newsletter</span>
+          </div>
+          <span class="quick-link-item__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       MISSION
+  ============================================ -->
+  <section class="mission section--xl" aria-label="Mission">
+    <div class="container" style="position:relative">
+      <span class="mission__number" aria-hidden="true">01</span>
+      <p class="label mission__label reveal">The mission</p>
+      <h2 class="mission__headline reveal reveal-delay-1">
+        MOST PEOPLE ARE LIVING<br>
+        INSIDE SYSTEMS<br>
+        <em>they didn't choose.</em>
+      </h2>
+      <p class="mission__body reveal reveal-delay-2">
+        The script was written before you arrived. What to want, how to decide, who to trust, what counts as success. <strong>Persuasion is everywhere</strong> — in sales pages, in workplaces, in relationships, in the quiet pressure to want a life that was designed for someone else.
+        <br><br>
+        Persuasion literacy is how you start to see it. And once you can see it, you can choose.
+      </p>
+      <a href="/about.html" class="btn btn--primary reveal reveal-delay-3">More about this work →</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CORE BELIEFS
+  ============================================ -->
+  <section class="beliefs section--xl" aria-labelledby="beliefs-heading">
+    <div class="container">
+      <div class="beliefs__header reveal">
+        <p class="label" style="margin-bottom:0.75rem">Core beliefs</p>
+        <h2 class="display-lg">What I<br><em style="font-style:italic;color:var(--mid)">actually</em><br>think.</h2>
+      </div>
+      <ul class="beliefs__list" role="list">
+        <li class="belief-item reveal">
+          <span class="belief-num">01</span>
+          <span class="belief-text">MOST PEOPLE <em>are living inside</em> SCRIPTS <em>they didn't write</em></span>
+        </li>
+        <li class="belief-item reveal reveal-delay-1">
+          <span class="belief-num">02</span>
+          <span class="belief-text">NAMING <em>what's happening is the first act of</em> FREEDOM</span>
+        </li>
+        <li class="belief-item reveal reveal-delay-2">
+          <span class="belief-num">03</span>
+          <span class="belief-text">URGENCY <em>that's real</em> DOESN'T NEED <em>a countdown timer</em></span>
+        </li>
+        <li class="belief-item reveal reveal-delay-3">
+          <span class="belief-num">04</span>
+          <span class="belief-text">ETHICAL PERSUASION <em>and</em> EFFECTIVE PERSUASION <em>are not opposites</em></span>
+        </li>
+        <li class="belief-item reveal">
+          <span class="belief-num">05</span>
+          <span class="belief-text">CLARITY <em>about how decisions get made is</em> POWER</span>
+        </li>
+        <li class="belief-item reveal reveal-delay-1">
+          <span class="belief-num">06</span>
+          <span class="belief-text">YOU WERE HANDED A SCRIPT. <em>Nobody mentioned</em> YOU COULD PUT IT DOWN.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECOND LOOK FEATURE
+  ============================================ -->
+  <section class="second-look" aria-labelledby="secondlook-heading">
+    <div class="container">
+      <div class="second-look__inner">
+        <div>
+          <p class="label second-look__kicker reveal">Signature product</p>
+          <h2 class="second-look__headline reveal reveal-delay-1" id="secondlook-heading">
+            SECOND<br>LOOK™
+          </h2>
+          <p class="second-look__body reveal reveal-delay-2">
+            Before you buy the course, the coaching package, the mastermind — <strong>run a Second Look.</strong> The app analyzes the sales page and shows you exactly which persuasion tactics are being used on you. Because clearer decisions start with seeing what you're actually looking at.
+          </p>
+          <a href="/second-look.html" class="btn btn--dark reveal reveal-delay-3">Learn more →</a>
+        </div>
+        <div class="second-look__card reveal reveal-delay-1">
+          <p class="second-look__card-eyebrow">Second Look™ by BMB</p>
+          <h3 class="second-look__card-title">Read the page before it reads you.</h3>
+          <p class="second-look__card-desc">Paste any sales page URL. Get a plain-English breakdown of the persuasion tactics at work. Make an informed decision.</p>
+          <ul class="second-look__features">
+            <li>Identifies urgency, scarcity, and fear-based tactics</li>
+            <li>Rates emotional manipulation levels</li>
+            <li>Flags missing or misleading information</li>
+            <li>One-time flat fee, no subscription</li>
+          </ul>
+          <a href="https://secondlook.mojoblu.com" target="_blank" rel="noopener" class="btn btn--primary" style="width:100%;text-align:center;display:block">Try Second Look™ →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SOCIAL PROOF
+  ============================================ -->
+  <section class="proof section" aria-label="Testimonials">
+    <div class="container">
+      <p class="label reveal" style="margin-bottom:2rem">What people are saying</p>
+      <div class="proof__grid">
+        <div class="proof__item reveal">
+          <blockquote class="proof__quote">
+            "I've sat through a hundred sales calls and never once had someone explain <strong>what was actually happening to me</strong> in those calls. This changed how I buy — and how I sell."
+          </blockquote>
+          <p class="proof__attribution">— Placeholder · Replace with real testimonial</p>
+        </div>
+        <div class="proof__item reveal reveal-delay-1">
+          <blockquote class="proof__quote">
+            "Second Look flagged three things on a $3,000 course page that I would have completely missed. <strong>I didn't buy it. I don't regret that.</strong>"
+          </blockquote>
+          <p class="proof__attribution">— Placeholder · Replace with real testimonial</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT STRIP
+  ============================================ -->
+  <section class="about-strip" aria-label="About">
+    <div class="container">
+      <div class="about-strip__inner">
+        <div>
+          <p class="label about-strip__label reveal">The person behind it</p>
+          <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:0">I've done a lot of things.<br><em>Here are some of them.</em></h2>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <p class="about-strip__text">
+            20+ years as an event and hockey photographer. Nonprofit board leadership. Screenwriting. Comedy. And somewhere in the middle of all of it, I started noticing <em>the systems</em> — the invisible structures that convince smart people to want things they didn't actually choose, and decide in ways they didn't realize were being guided.
+            <br><br>
+            So I built something about it.
+          </p>
+          <a href="/about.html" class="about-strip__link">Full story → <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       BLOG PREVIEW
+  ============================================ -->
+  <section class="blog-preview section" aria-labelledby="blog-heading">
+    <div class="container">
+      <div class="blog-preview__header">
+        <div>
+          <p class="label" style="margin-bottom:0.5rem">From the blog</p>
+          <h2 class="display-md" id="blog-heading">Latest reads</h2>
+        </div>
+        <a href="/blog/" class="blog-preview__see-all">See all articles →</a>
+      </div>
+      <div class="blog-preview__grid">
+        <!-- These will be real posts once Eleventy is set up -->
+        <a href="/blog/" class="blog-card">
+          <div class="blog-card__meta">
+            <span class="blog-card__tag">Persuasion 101</span>
+            <span class="blog-card__date">Coming soon</span>
+          </div>
+          <h3 class="blog-card__title">What Is Persuasion Literacy (And Why Every Business Owner Needs It)</h3>
+          <p class="blog-card__excerpt">The ability to name what's happening is the first step to choosing how to respond.</p>
+        </a>
+        <a href="/blog/" class="blog-card">
+          <div class="blog-card__meta">
+            <span class="blog-card__tag">Sales Pages</span>
+            <span class="blog-card__date">Coming soon</span>
+          </div>
+          <h3 class="blog-card__title">5 Red Flags on a Sales Page That Should Make You Pause</h3>
+          <p class="blog-card__excerpt">False urgency is the most common. It's also the easiest to spot once you know what to look for.</p>
+        </a>
+        <a href="/blog/" class="blog-card">
+          <div class="blog-card__meta">
+            <span class="blog-card__tag">Ethical Marketing</span>
+            <span class="blog-card__date">Coming soon</span>
+          </div>
+          <h3 class="blog-card__title">How to Sell Persuasively Without Being Manipulative</h3>
+          <p class="blog-card__excerpt">These are not opposites. Here's the actual difference — and how to stay on the right side of it.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EMAIL CTA
+  ============================================ -->
+  <section class="email-cta section--xl" id="newsletter" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <p class="email-cta__eyebrow">The newsletter</p>
+      <h2 class="email-cta__headline reveal" id="newsletter-heading">
+        SEE THE SYSTEM.<br>
+        MAKE <em>your own</em><br>
+        CALL.
+      </h2>
+      <p class="email-cta__sub reveal reveal-delay-1">
+        Weekly persuasion literacy for women rethinking the life they were told to want. No manipulation, no false urgency, no ironic countdown timers. Just clarity.
+      </p>
+      <!-- Beehiiv embed form
+           Replace YOUR_BEEHIIV_FORM_ID below with your actual ID from:
+           Beehiiv dashboard → Settings → Forms → Embed
+           It will look like: https://embeds.beehiiv.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+      -->
+      <form class="email-form reveal reveal-delay-2"
+            action="https://embeds.beehiiv.com/YOUR_BEEHIIV_FORM_ID"
+            method="POST"
+            target="_blank"
+            aria-label="Newsletter signup">
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address" />
+        <button type="submit" class="btn btn--primary">Sign me up →</button>
+      </form>
+      <p class="email-form__note reveal reveal-delay-3">No spam. Unsubscribe anytime. We take inboxes seriously around here.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__brand-name">Brookie Means Business</p>
+          <p class="footer__brand-desc">Persuasion literacy for women rethinking the life they were told to want. Utah-based. Internet-distributed.</p>
+        </div>
+        <div>
+          <p class="footer__nav-label">Navigate</p>
+          <ul class="footer__nav-links">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/second-look.html">Second Look™</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__nav-label">Connect</p>
+          <ul class="footer__nav-links">
+            <li><a href="https://instagram.com/brookiemeansbusiness" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://linkedin.com/in/brookiemeansbusiness" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="/blog/" target="_blank" rel="noopener">Blog / RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Brookie Means Business · Mojo Blu LLC · All rights reserved</p>
+        <div class="footer__social">
+          <a href="https://instagram.com/brookiemeansbusiness" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://linkedin.com/in/brookiemeansbusiness" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       JS: Nav scroll + Reveal animations
+  ============================================ -->
+  <script>
+    // Nav scroll state
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

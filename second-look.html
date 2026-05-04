@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Second Look™ — Read the Sales Page Before It Reads You</title>
+  <meta name="description" content="Second Look™ analyzes any sales page and shows you exactly which persuasion tactics are being used on you — before you buy. $27 for 100 analyses. One-time fee, no subscription." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700;1,9..144,900&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Product schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Second Look™",
+    "description": "Second Look analyzes sales pages to identify persuasion tactics before you buy. Paste any sales page URL and get a plain-English breakdown of urgency, scarcity, emotional manipulation, and other tactics being used on you.",
+    "url": "https://secondlook.mojoblu.com",
+    "applicationCategory": "BusinessApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "27.00",
+      "priceCurrency": "USD",
+      "description": "100 analyses, one-time flat fee. Repurchase if you need more."
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Brookie",
+      "url": "https://brookiemeansbusiness.com"
+    },
+    "featureList": [
+      "Identifies false urgency and countdown manipulation",
+      "Flags manufactured scarcity tactics",
+      "Rates emotional manipulation levels",
+      "Surfaces missing or misleading information",
+      "Spots social proof abuse",
+      "Plain-English breakdown, no jargon"
+    ]
+  }
+  </script>
+
+  <!-- FAQ schema for AEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Second Look?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Second Look is a web app that analyzes sales pages to identify persuasion tactics before you buy. You paste a URL, and it returns a plain-English breakdown of the tactics being used — urgency, scarcity, emotional manipulation, social proof abuse, and more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Second Look cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Second Look costs $27 for 100 analyses. It's a one-time flat fee with no subscription. If you need more analyses, you can repurchase."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is Second Look for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Second Look is for anyone who wants to make clearer buying decisions — especially before purchasing online courses, coaching programs, masterminds, or memberships. It's built for people who want to understand what they're looking at before they hand over their credit card."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What persuasion tactics does Second Look identify?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Second Look identifies false urgency, manufactured scarcity, emotional manipulation, fear-based messaging, social proof abuse, missing or misleading information, and other common persuasion tactics used in online sales pages."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --black: #1a2e1f;
+      --white: #f5f2ee;
+      --cream: #e8e4da;
+      --ink: #1a2e1f;
+      --accent: #c8441a;
+      --accent-light: #e8601a;
+      --mid: #5a6b5d;
+      --border: rgba(26,46,31,0.14);
+
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --font-mono: 'DM Mono', monospace;
+
+      --space-md: 2rem;
+      --space-lg: 4rem;
+      --space-xl: 7rem;
+      --max-width: 1200px;
+      --reading-width: 640px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--white);
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .label {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    .btn {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.9rem 1.8rem;
+      border-radius: 2px;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn--primary { background: var(--accent); color: var(--white); }
+    .btn--primary:hover { background: var(--accent-light); }
+    .btn--primary-lg {
+      background: var(--accent);
+      color: var(--white);
+      font-size: 0.82rem;
+      padding: 1.1rem 2.4rem;
+    }
+    .btn--primary-lg:hover { background: var(--accent-light); }
+    .btn--ghost-light {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(245,242,238,0.25);
+    }
+    .btn--ghost-light:hover {
+      border-color: var(--white);
+      background: rgba(245,242,238,0.08);
+    }
+    .btn--outline {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid var(--border);
+    }
+    .btn--outline:hover { background: var(--ink); color: var(--white); }
+
+    /* ============================================
+       NAV
+    ============================================ -->*/
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+      transition: background 0.3s ease, backdrop-filter 0.3s ease;
+    }
+
+    .nav.scrolled {
+      background: rgba(245,242,238,0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav__logo {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.05rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .nav__links {
+      display: none;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav__links a {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink);
+      transition: color 0.2s;
+    }
+
+    .nav__links a:hover,
+    .nav__links a.active { color: var(--accent); }
+
+    .nav__cta {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: var(--ink);
+      color: var(--white);
+      padding: 0.55rem 1.1rem;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+
+    .nav__cta:hover { background: var(--accent); }
+
+    /* ============================================
+       HERO
+    ============================================ */
+    .sl-hero {
+      background: var(--ink);
+      color: var(--white);
+      padding: 9rem 0 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sl-hero__bg {
+      position: absolute;
+      bottom: -3rem;
+      right: -1rem;
+      font-family: var(--font-display);
+      font-size: clamp(8rem, 30vw, 26rem);
+      font-weight: 900;
+      line-height: 1;
+      color: rgba(255,255,255,0.03);
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    .sl-hero__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .sl-hero__eyebrow::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    .sl-hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 14vw, 10rem);
+      font-weight: 900;
+      line-height: 0.87;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.15em;
+    }
+
+    .sl-hero__title em {
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(245,242,238,0.4);
+      display: block;
+    }
+
+    .sl-hero__sub {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 2.8vw, 1.4rem);
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(245,242,238,0.6);
+      max-width: 520px;
+      line-height: 1.5;
+      margin: 1.5rem 0 2.5rem;
+    }
+
+    .sl-hero__sub strong {
+      font-style: normal;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .sl-hero__price-row {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .sl-hero__price {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .sl-hero__price-detail {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: rgba(245,242,238,0.45);
+      line-height: 1.6;
+    }
+
+    .sl-hero__cta-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .sl-hero__no-bs {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      color: rgba(245,242,238,0.3);
+      margin-top: 1rem;
+    }
+
+    /* ============================================
+       THE PROBLEM
+    ============================================ */
+    .problem {
+      background: var(--cream);
+      padding: var(--space-xl) 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .problem__bg {
+      position: absolute;
+      top: -2rem;
+      right: -1rem;
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 20vw, 16rem);
+      font-weight: 900;
+      color: rgba(26,46,31,0.04);
+      pointer-events: none;
+      user-select: none;
+      line-height: 1;
+    }
+
+    .problem__label { margin-bottom: 1.5rem; }
+
+    .problem__headline {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 5vw, 3.5rem);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 2rem;
+      max-width: 680px;
+    }
+
+    .problem__headline em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--accent);
+    }
+
+    .problem__body {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--mid);
+      max-width: var(--reading-width);
+    }
+
+    .problem__body strong { color: var(--ink); font-weight: 500; }
+    .problem__body p + p { margin-top: 1.1rem; }
+
+    .problem__pullquote {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      font-weight: 700;
+      font-style: italic;
+      line-height: 1.3;
+      color: var(--ink);
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2.5rem 0;
+      max-width: 520px;
+    }
+
+    /* ============================================
+       HOW IT WORKS
+    ============================================ */
+    .how-it-works {
+      background: var(--white);
+      padding: var(--space-xl) 0;
+    }
+
+    .how-it-works__header {
+      margin-bottom: 3rem;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .step {
+      background: var(--white);
+      padding: 2rem 1.5rem;
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      gap: 1.2rem;
+      align-items: start;
+      transition: background 0.2s;
+    }
+
+    .step:hover { background: var(--cream); }
+
+    .step__num {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: rgba(26,46,31,0.08);
+      line-height: 1;
+      padding-top: 0.1rem;
+    }
+
+    .step__title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+      color: var(--ink);
+    }
+
+    .step__desc {
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: var(--mid);
+    }
+
+    /* ============================================
+       WHAT IT CATCHES
+    ============================================ */
+    .catches {
+      background: var(--ink);
+      color: var(--white);
+      padding: var(--space-xl) 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .catches__bg {
+      position: absolute;
+      bottom: -2rem;
+      left: -1rem;
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 22vw, 18rem);
+      font-weight: 900;
+      color: rgba(255,255,255,0.03);
+      pointer-events: none;
+      user-select: none;
+      line-height: 1;
+    }
+
+    .catches__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .catches__label {
+      color: rgba(245,242,238,0.4);
+      margin-bottom: 1rem;
+    }
+
+    .catches__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.2rem;
+    }
+
+    .catches__headline em {
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(245,242,238,0.4);
+    }
+
+    .catches__sub {
+      font-size: 0.95rem;
+      color: rgba(245,242,238,0.55);
+      line-height: 1.7;
+      max-width: 420px;
+    }
+
+    .tactics-list {
+      list-style: none;
+      border-top: 1px solid rgba(245,242,238,0.1);
+    }
+
+    .tactic-item {
+      display: grid;
+      grid-template-columns: 1.5rem 1fr;
+      gap: 1rem;
+      align-items: start;
+      padding: 1.3rem 0;
+      border-bottom: 1px solid rgba(245,242,238,0.1);
+    }
+
+    .tactic-item__bullet {
+      color: var(--accent);
+      font-size: 1.1rem;
+      padding-top: 0.1rem;
+    }
+
+    .tactic-item__title {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.2rem;
+    }
+
+    .tactic-item__desc {
+      font-size: 0.85rem;
+      color: rgba(245,242,238,0.5);
+      line-height: 1.55;
+    }
+
+    /* ============================================
+       WHO IT'S FOR
+    ============================================ */
+    .who-its-for {
+      background: var(--cream);
+      padding: var(--space-xl) 0;
+    }
+
+    .who-its-for__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .who-its-for__label { margin-bottom: 1rem; }
+
+    .who-its-for__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 3.8rem);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+    }
+
+    .who-its-for__headline em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--mid);
+    }
+
+    .for-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .for-item {
+      display: grid;
+      grid-template-columns: 1.5rem 1fr;
+      gap: 1rem;
+      align-items: start;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .for-item__check {
+      color: var(--accent);
+      font-size: 1rem;
+      padding-top: 0.15rem;
+    }
+
+    .for-item__text {
+      font-size: 1rem;
+      line-height: 1.55;
+      color: var(--ink);
+    }
+
+    .for-item__text strong { font-weight: 600; }
+
+    .not-for {
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .not-for__label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.75rem;
+    }
+
+    .not-for__text {
+      font-size: 0.92rem;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+
+    /* ============================================
+       PRICING
+    ============================================ */
+    .pricing {
+      background: var(--white);
+      padding: var(--space-xl) 0;
+    }
+
+    .pricing__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .pricing__label { margin-bottom: 1rem; }
+
+    .pricing__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .pricing__headline em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--mid);
+    }
+
+    .pricing__rationale {
+      font-size: 1rem;
+      color: var(--mid);
+      line-height: 1.7;
+      max-width: 460px;
+    }
+
+    .pricing__rationale strong { color: var(--ink); }
+
+    .pricing-card {
+      background: var(--ink);
+      color: var(--white);
+      padding: 2.5rem 2rem;
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-card::before {
+      content: '™';
+      position: absolute;
+      top: -1rem;
+      right: 1rem;
+      font-family: var(--font-display);
+      font-size: 8rem;
+      font-weight: 900;
+      color: rgba(255,255,255,0.04);
+      pointer-events: none;
+    }
+
+    .pricing-card__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .pricing-card__amount {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 0.2rem;
+    }
+
+    .pricing-card__amount sup {
+      font-size: 2rem;
+      vertical-align: super;
+    }
+
+    .pricing-card__detail {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      color: rgba(245,242,238,0.45);
+      margin-bottom: 2rem;
+    }
+
+    .pricing-card__includes {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      margin-bottom: 2rem;
+      border-top: 1px solid rgba(245,242,238,0.1);
+      padding-top: 1.5rem;
+    }
+
+    .pricing-card__includes li {
+      font-size: 0.9rem;
+      color: rgba(245,242,238,0.7);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      line-height: 1.4;
+    }
+
+    .pricing-card__includes li::before {
+      content: '→';
+      color: var(--accent);
+      flex-shrink: 0;
+      font-family: var(--font-mono);
+    }
+
+    .pricing-card__cta {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: var(--white);
+      padding: 1.1rem 2rem;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+
+    .pricing-card__cta:hover { background: var(--accent-light); }
+
+    .pricing-card__note {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: rgba(245,242,238,0.25);
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    /* ============================================
+       OBJECTIONS
+    ============================================ */
+    .objections {
+      background: var(--cream);
+      padding: var(--space-lg) 0;
+    }
+
+    .objections__label { margin-bottom: 2rem; }
+
+    .obj-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .obj-item {
+      background: var(--cream);
+      padding: 1.8rem 1.5rem;
+      transition: background 0.2s;
+    }
+
+    .obj-item:hover { background: var(--white); }
+
+    .obj-item__q {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+      line-height: 1.25;
+    }
+
+    .obj-item__a {
+      font-size: 0.92rem;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+
+    .obj-item__a strong { color: var(--ink); }
+
+    /* ============================================
+       FINAL CTA
+    ============================================ -->*/
+    .final-cta {
+      background: var(--black);
+      color: var(--white);
+      padding: var(--space-xl) 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta__bg {
+      position: absolute;
+      bottom: -3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--font-display);
+      font-size: clamp(8rem, 30vw, 22rem);
+      font-weight: 900;
+      color: rgba(255,255,255,0.03);
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+      line-height: 1;
+    }
+
+    .final-cta__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .final-cta__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 9vw, 7rem);
+      font-weight: 900;
+      line-height: 0.9;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+    }
+
+    .final-cta__headline em {
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(245,242,238,0.35);
+    }
+
+    .final-cta__sub {
+      font-size: 1rem;
+      color: rgba(245,242,238,0.55);
+      max-width: 400px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+
+    .final-cta__price {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 2rem;
+    }
+
+    .final-cta__price span {
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(245,242,238,0.4);
+      font-size: 1rem;
+    }
+
+    .final-cta__buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    .footer {
+      background: var(--ink);
+      color: var(--white);
+      padding: var(--space-lg) 0 2rem;
+      border-top: 1px solid rgba(245,242,238,0.06);
+    }
+
+    .footer__top {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(245,242,238,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .footer__brand-name {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer__brand-desc {
+      font-size: 0.88rem;
+      color: rgba(245,242,238,0.4);
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer__nav-label {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(245,242,238,0.3);
+      margin-bottom: 1rem;
+    }
+
+    .footer__nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer__nav-links a {
+      font-size: 0.88rem;
+      color: rgba(245,242,238,0.5);
+      transition: color 0.2s;
+    }
+
+    .footer__nav-links a:hover { color: var(--white); }
+
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer__copy {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      color: rgba(245,242,238,0.2);
+    }
+
+    .footer__social {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer__social a {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(245,242,238,0.35);
+      transition: color 0.2s;
+    }
+
+    .footer__social a:hover { color: var(--accent); }
+
+    /* ============================================
+       SCROLL ANIMATIONS
+    ============================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* ============================================
+       DESKTOP
+    ============================================ */
+    @media (min-width: 640px) {
+      .obj-list { grid-template-columns: 1fr 1fr; }
+      .final-cta__buttons { flex-direction: row; justify-content: center; }
+    }
+
+    @media (min-width: 900px) {
+      .nav__links { display: flex; }
+
+      .catches__inner { grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+      .who-its-for__inner { grid-template-columns: 1fr 1fr; gap: 5rem; }
+      .pricing__inner { grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+      .steps { grid-template-columns: 1fr 1fr 1fr; }
+
+      .footer__top { grid-template-columns: 1.5fr 1fr 1fr; }
+      .footer__bottom { flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a href="/" class="nav__logo">BMB</a>
+    <ul class="nav__links">
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/second-look.html" class="active">Second Look</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <a href="https://secondlook.mojoblu.com" target="_blank" rel="noopener" class="nav__cta">Try it now →</a>
+  </nav>
+
+  <!-- ============================================
+       HERO
+  ============================================ -->
+  <header class="sl-hero" aria-label="Second Look introduction">
+    <div class="container" style="position:relative">
+      <span class="sl-hero__bg" aria-hidden="true">LOOK</span>
+      <p class="sl-hero__eyebrow">Second Look™ by Brookie Means Business</p>
+      <h1 class="sl-hero__title">
+        READ<br>
+        THE PAGE<br>
+        <em>before it reads you.</em>
+      </h1>
+      <p class="sl-hero__sub">
+        Paste any sales page URL. Get a <strong>plain-English breakdown</strong> of every persuasion tactic being used on you. Then decide — with your brain, not your nervous system.
+      </p>
+      <div class="sl-hero__price-row">
+        <div class="sl-hero__price">$27</div>
+        <div class="sl-hero__price-detail">
+          100 analyses<br>
+          One-time flat fee · No subscription<br>
+          Repurchase if you need more
+        </div>
+      </div>
+      <div class="sl-hero__cta-row">
+        <a href="https://secondlook.mojoblu.com" target="_blank" rel="noopener" class="btn btn--primary-lg">Try Second Look™ →</a>
+        <a href="#how-it-works" class="btn btn--ghost-light">See how it works</a>
+      </div>
+      <p class="sl-hero__no-bs">No countdown timer. No "only 3 spots left." Just a flat price and a useful tool.</p>
+    </div>
+  </header>
+
+  <!-- ============================================
+       THE PROBLEM
+  ============================================ -->
+  <section class="problem" aria-labelledby="problem-heading">
+    <div class="container" style="position:relative">
+      <span class="problem__bg" aria-hidden="true">WHY</span>
+      <p class="label problem__label reveal">Why this exists</p>
+      <h2 class="problem__headline reveal reveal-delay-1" id="problem-heading">
+        Sales pages are designed by people who <em>know exactly</em> what they're doing.
+      </h2>
+      <div class="problem__body reveal reveal-delay-2">
+        <p>
+          False urgency. Manufactured scarcity. Testimonials selected for maximum emotional impact. Pain points amplified until buying feels like the only rational response. <strong>These aren't accidents.</strong> They're tactics — and they work on smart, experienced people all the time.
+        </p>
+        <p>
+          Not because those people are naive. Because the tactics are designed to bypass the part of your brain that asks questions.
+        </p>
+      </div>
+      <blockquote class="problem__pullquote reveal">
+        "I spent five years and over $10,000 inside a photography community before I finally asked myself: how did this happen? That question built Second Look."
+        <cite style="display:block;margin-top:0.75rem;font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.12em;font-style:normal;color:var(--mid);">— Brookie, founder</cite>
+      </blockquote>
+      <div class="problem__body reveal">
+        <p>
+          Second Look gives you back the pause. The moment between "I need this" and "I'm buying this" — <strong>filled with actual information</strong> instead of marketing pressure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       HOW IT WORKS
+  ============================================ -->
+  <section class="how-it-works" id="how-it-works" aria-labelledby="how-heading">
+    <div class="container">
+      <div class="how-it-works__header reveal">
+        <p class="label" style="margin-bottom:0.75rem">How it works</p>
+        <h2 class="pricing__headline" id="how-heading">
+          Three steps.<br><em>That's it.</em>
+        </h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step__num">1</span>
+          <div>
+            <h3 class="step__title">Paste the URL</h3>
+            <p class="step__desc">Copy the link to any sales page — a course, a coaching program, a mastermind, a membership. Paste it into Second Look.</p>
+          </div>
+        </div>
+        <div class="step reveal reveal-delay-1">
+          <span class="step__num">2</span>
+          <div>
+            <h3 class="step__title">Get the analysis</h3>
+            <p class="step__desc">Second Look reads the page and returns a plain-English breakdown of every persuasion tactic it identifies — what it is, how it's being used, and what to watch for.</p>
+          </div>
+        </div>
+        <div class="step reveal reveal-delay-2">
+          <span class="step__num">3</span>
+          <div>
+            <h3 class="step__title">Make your call</h3>
+            <p class="step__desc">Now you decide. Maybe you still buy — and that's completely fine. The goal isn't suspicion. It's clarity. You deserve to make the choice with your eyes open.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WHAT IT CATCHES
+  ============================================ -->
+  <section class="catches" aria-labelledby="catches-heading">
+    <div class="container" style="position:relative">
+      <span class="catches__bg" aria-hidden="true">FLAGS</span>
+      <div class="catches__inner">
+        <div>
+          <p class="label catches__label reveal">What it flags</p>
+          <h2 class="catches__headline reveal reveal-delay-1" id="catches-heading">
+            The tactics.<br>
+            <em>Named.</em>
+          </h2>
+          <p class="catches__sub reveal reveal-delay-2">Second Look identifies the most common persuasion tactics used in online sales pages — in plain language, without the marketing jargon.</p>
+        </div>
+        <ul class="tactics-list reveal reveal-delay-1">
+          <li class="tactic-item">
+            <span class="tactic-item__bullet">→</span>
+            <div>
+              <p class="tactic-item__title">False Urgency</p>
+              <p class="tactic-item__desc">Countdown timers, "offer ends soon" language, and artificial deadlines designed to make you act before you think.</p>
+            </div>
+          </li>
+          <li class="tactic-item">
+            <span class="tactic-item__bullet">→</span>
+            <div>
+              <p class="tactic-item__title">Manufactured Scarcity</p>
+              <p class="tactic-item__desc">"Only 3 spots left" for a digital product. Limited access claims that may not be real.</p>
+            </div>
+          </li>
+          <li class="tactic-item">
+            <span class="tactic-item__bullet">→</span>
+            <div>
+              <p class="tactic-item__title">Emotional Manipulation</p>
+              <p class="tactic-item__desc">Pain amplification, fear of missing out, identity-based pressure — tactics that target your feelings rather than your judgment.</p>
+            </div>
+          </li>
+          <li class="tactic-item">
+            <span class="tactic-item__bullet">→</span>
+            <div>
+              <p class="tactic-item__title">Social Proof Abuse</p>
+              <p class="tactic-item__desc">Testimonials, income claims, and success stories used in ways that may not represent typical results.</p>
+            </div>
+          </li>
+          <li class="tactic-item">
+            <span class="tactic-item__bullet">→</span>
+            <div>
+              <p class="tactic-item__title">Missing Information</p>
+              <p class="tactic-item__desc">What the page doesn't say — pricing buried, refund policy absent, credentials unverifiable.</p>
+            </div>
+          </li>
+          <li class="tactic-item">
+            <span class="tactic-item__bullet">→</span>
+            <div>
+              <p class="tactic-item__title">Authority & Credibility Claims</p>
+              <p class="tactic-item__desc">Name-dropping, vague credentials, and "as seen in" placements that may be less impressive than they appear.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WHO IT'S FOR
+  ============================================ -->
+  <section class="who-its-for" aria-labelledby="who-heading">
+    <div class="container">
+      <div class="who-its-for__inner">
+        <div>
+          <p class="label who-its-for__label reveal">Who it's for</p>
+          <h2 class="who-its-for__headline reveal reveal-delay-1" id="who-heading">
+            For anyone<br>
+            who wants to<br>
+            <em>actually know</em><br>
+            what they're<br>
+            looking at.
+          </h2>
+        </div>
+        <div>
+          <ul class="for-list reveal reveal-delay-1">
+            <li class="for-item">
+              <span class="for-item__check">✓</span>
+              <p class="for-item__text"><strong>Before buying a course or program</strong> — especially anything over $500 where the sales page is doing a lot of heavy lifting.</p>
+            </li>
+            <li class="for-item">
+              <span class="for-item__check">✓</span>
+              <p class="for-item__text"><strong>Before joining a membership or mastermind</strong> — recurring commitments deserve extra scrutiny.</p>
+            </li>
+            <li class="for-item">
+              <span class="for-item__check">✓</span>
+              <p class="for-item__text"><strong>When something feels off</strong> — you can't name it, but your gut is saying slow down. Second Look can name it.</p>
+            </li>
+            <li class="for-item">
+              <span class="for-item__check">✓</span>
+              <p class="for-item__text"><strong>When you're already sold and want to double-check yourself</strong> — sometimes the best time to look is when you're most excited.</p>
+            </li>
+            <li class="for-item">
+              <span class="for-item__check">✓</span>
+              <p class="for-item__text"><strong>Business owners reviewing their own sales pages</strong> — make sure your persuasion is ethical before it goes live.</p>
+            </li>
+          </ul>
+          <div class="not-for reveal reveal-delay-2">
+            <p class="not-for__label">A note</p>
+            <p class="not-for__text">Second Look isn't a scam detector. Most sales pages use persuasion tactics — that doesn't make the product bad. The goal is clarity, not cynicism. You might run a page through Second Look and buy anyway. That's a completely valid outcome.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PRICING
+  ============================================ -->
+  <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
+    <div class="container">
+      <div class="pricing__inner">
+        <div>
+          <p class="label pricing__label reveal">Pricing</p>
+          <h2 class="pricing__headline reveal reveal-delay-1" id="pricing-heading">
+            Flat fee.<br>
+            <em>No games.</em>
+          </h2>
+          <p class="pricing__rationale reveal reveal-delay-2">
+            It would be pretty on-brand for a persuasion literacy tool to have a manipulative pricing page. So we didn't do that. <strong>$27 for 100 analyses.</strong> One time. No subscription, no upsell sequence, no "but wait — if you upgrade today..."
+            <br><br>
+            If you use all 100, you can repurchase. That's it. That's the whole model.
+          </p>
+        </div>
+        <div class="pricing-card reveal reveal-delay-1">
+          <p class="pricing-card__eyebrow">Second Look™</p>
+          <div class="pricing-card__amount"><sup>$</sup>27</div>
+          <p class="pricing-card__detail">One-time · 100 analyses · No subscription</p>
+          <ul class="pricing-card__includes">
+            <li>100 sales page analyses</li>
+            <li>Plain-English tactic breakdown</li>
+            <li>Identifies 6+ persuasion tactics</li>
+            <li>Flags missing or suspicious information</li>
+            <li>Instant access after purchase</li>
+            <li>Repurchase anytime if you need more</li>
+          </ul>
+          <a href="https://secondlook.mojoblu.com" target="_blank" rel="noopener" class="pricing-card__cta">Get Second Look™ for $27 →</a>
+          <p class="pricing-card__note">No countdown timer. No pressure. Just a useful tool at a fair price.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       OBJECTIONS
+  ============================================ -->
+  <section class="objections" aria-labelledby="obj-heading">
+    <div class="container">
+      <p class="label objections__label reveal" id="obj-heading">Common questions</p>
+      <div class="obj-list">
+        <div class="obj-item reveal">
+          <p class="obj-item__q">Is this going to make me paranoid about everything I buy?</p>
+          <p class="obj-item__a">Probably not. Most of the time Second Look will show you the tactics, you'll recognize them, and you'll still decide the product is worth it. <strong>Information isn't the same as suspicion.</strong></p>
+        </div>
+        <div class="obj-item reveal reveal-delay-1">
+          <p class="obj-item__q">What if I only have a few pages to analyze?</p>
+          <p class="obj-item__a">$27 for 100 analyses is about 27 cents each. <strong>Run the pages you care about.</strong> The rest are there if you need them.</p>
+        </div>
+        <div class="obj-item reveal">
+          <p class="obj-item__q">Does this work on any sales page?</p>
+          <p class="obj-item__a">It's built for online courses, coaching programs, memberships, and masterminds — the places where persuasion tactics are most commonly used and highest-stakes. <strong>Most sales pages in that space work well.</strong></p>
+        </div>
+        <div class="obj-item reveal reveal-delay-1">
+          <p class="obj-item__q">What if the product is actually good?</p>
+          <p class="obj-item__a">Then you'll buy it with confidence instead of anxiety. <strong>Clarity cuts both ways.</strong> Second Look can confirm a good purchase just as easily as it flags a bad one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FINAL CTA
+  ============================================ -->
+  <section class="final-cta" aria-label="Final call to action">
+    <div class="container" style="position:relative">
+      <span class="final-cta__bg" aria-hidden="true">$27</span>
+      <p class="final-cta__eyebrow">Ready?</p>
+      <h2 class="final-cta__headline reveal">
+        TAKE A<br>
+        <em>second</em><br>
+        LOOK.
+      </h2>
+      <p class="final-cta__sub reveal reveal-delay-1">
+        100 analyses. One-time fee. No subscription, no urgency, no games.
+      </p>
+      <p class="final-cta__price reveal reveal-delay-2">
+        $27 <span>— that's it</span>
+      </p>
+      <div class="final-cta__buttons reveal reveal-delay-3">
+        <a href="https://secondlook.mojoblu.com" target="_blank" rel="noopener" class="btn btn--primary-lg">Get Second Look™ →</a>
+        <a href="/about.html" class="btn btn--ghost-light">Read the origin story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__brand-name">Brookie Means Business</p>
+          <p class="footer__brand-desc">Persuasion literacy for women rethinking the life they were told to want. Utah-based. Internet-distributed.</p>
+        </div>
+        <div>
+          <p class="footer__nav-label">Navigate</p>
+          <ul class="footer__nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/second-look.html">Second Look™</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__nav-label">Connect</p>
+          <ul class="footer__nav-links">
+            <li><a href="https://instagram.com/brookiemeansbusiness" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://linkedin.com/in/brookiemeansbusiness" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Brookie Means Business · Mojo Blu LLC · All rights reserved</p>
+        <div class="footer__social">
+          <a href="https://instagram.com/brookiemeansbusiness" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://linkedin.com/in/brookiemeansbusiness" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
