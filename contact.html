@@ -1165,23 +1165,33 @@
     // Replace this with your actual form handler (Formspree, Netlify Forms, etc.)
     // For Formspree: set form action="https://formspree.io/f/YOUR_FORM_ID" and remove this JS handler
     const form = document.getElementById('bmb-contact-form');
-    const formSuccess = document.getElementById('form-success');
+const formSuccess = document.getElementById('form-success');
 
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
 
-      // Basic validation
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
+  // Basic validation
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
 
-      if (!name || !email || !message) return;
+  if (!name || !email || !message) return;
 
-      // Show success state
-      // Remove this block and let your form handler redirect/confirm instead
-      form.style.display = 'none';
-      formSuccess.classList.add('visible');
-    });
+  // Actually POST to Formspree
+  const response = await fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    form.style.display = 'none';
+    formSuccess.classList.add('visible');
+  } else {
+    // Optional: surface an error so it doesn't silently fail
+    alert('Something went wrong sending your message. Please try again or reach out on Instagram.');
+  }
+});
   </script>
 
 </body>
