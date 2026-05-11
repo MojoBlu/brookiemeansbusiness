@@ -996,111 +996,31 @@
        POST LIST
   ============================================ -->
   <section class="post-list" aria-labelledby="posts-label">
-    <div class="container">
-      <p class="label" id="posts-label" style="margin-bottom:1.5rem">All posts</p>
-      <div class="post-list__grid" id="post-grid">
+  <div class="container">
+    <p class="label" id="posts-label" style="margin-bottom:1.5rem">All posts</p>
+    <div class="post-list__grid" id="post-grid">
 
-        <!-- Post 1 — big -->
-        <a href="/blog/" class="post-item post-item--big" data-cat="sales-pages">
+      {% for post in collections.posts %}
+        <a href="{{ post.url }}" class="post-item{% if loop.first or loop.index == 4 %} post-item--big{% endif %}" data-cat="{{ post.data.category or 'general' }}">
           <div>
             <div class="post-item__meta">
-              <span class="post-item__cat">Sales Pages</span>
-              <span class="post-item__date">Coming soon</span>
+              <span class="post-item__cat">{{ post.data.category or 'General' }}</span>
+              <span class="post-item__date">{{ post.date | readableDate }}</span>
             </div>
-            <h3 class="post-item__title">5 Red Flags on a Sales Page That Should Make You Pause</h3>
-            <p class="post-item__excerpt">False urgency is the most common. It's also the easiest to spot once you know what you're looking at. Here are the five things I check before I hand over a credit card.</p>
-            <span class="post-item__arrow">→</span>
-          </div>
-        </a>
-
-        <!-- Post 2 -->
-        <a href="/blog/" class="post-item" data-cat="invisible-systems">
-          <div>
-            <div class="post-item__meta">
-              <span class="post-item__cat">Invisible Systems</span>
-              <span class="post-item__date">Coming soon</span>
-            </div>
-            <h3 class="post-item__title">The Life You Were Told to Want Didn't Come From Nowhere</h3>
+            <h3 class="post-item__title">{{ post.data.title }}</h3>
+            {% if post.data.excerpt %}
+              <p class="post-item__excerpt">{{ post.data.excerpt }}</p>
+            {% endif %}
           </div>
           <span class="post-item__arrow">→</span>
         </a>
+      {% else %}
+        <p>No posts yet.</p>
+      {% endfor %}
 
-        <!-- Post 3 -->
-        <a href="/blog/" class="post-item" data-cat="ethical-marketing">
-          <div>
-            <div class="post-item__meta">
-              <span class="post-item__cat">Ethical Marketing</span>
-              <span class="post-item__date">Coming soon</span>
-            </div>
-            <h3 class="post-item__title">How to Sell Persuasively Without Being Manipulative</h3>
-          </div>
-          <span class="post-item__arrow">→</span>
-        </a>
-
-        <!-- Post 4 — big -->
-        <a href="/blog/" class="post-item post-item--big" data-cat="invisible-systems">
-          <div>
-            <div class="post-item__meta">
-              <span class="post-item__cat">Invisible Systems</span>
-              <span class="post-item__date">Coming soon</span>
-            </div>
-            <h3 class="post-item__title">Why Smart People Still Fall for Manipulative Marketing</h3>
-            <p class="post-item__excerpt">It's not about intelligence. It's about systems designed specifically to bypass the part of your brain that asks questions. Understanding how they work is half the battle.</p>
-            <span class="post-item__arrow">→</span>
-          </div>
-        </a>
-
-        <!-- Post 5 -->
-        <a href="/blog/" class="post-item" data-cat="second-look">
-          <div>
-            <div class="post-item__meta">
-              <span class="post-item__cat">Second Look</span>
-              <span class="post-item__date">Coming soon</span>
-            </div>
-            <h3 class="post-item__title">I Ran 10 Popular Course Sales Pages Through Second Look. Here's What I Found.</h3>
-          </div>
-          <span class="post-item__arrow">→</span>
-        </a>
-
-        <!-- Post 6 -->
-        <a href="/blog/" class="post-item" data-cat="persuasion-101">
-          <div>
-            <div class="post-item__meta">
-              <span class="post-item__cat">Persuasion 101</span>
-              <span class="post-item__date">Coming soon</span>
-            </div>
-            <h3 class="post-item__title">The Six Principles of Influence — And How They're Being Used on You Right Now</h3>
-          </div>
-          <span class="post-item__arrow">→</span>
-        </a>
-
-        <!-- Post 7 -->
-        <a href="/blog/" class="post-item" data-cat="sales-pages">
-          <div>
-            <div class="post-item__meta">
-              <span class="post-item__cat">Sales Pages</span>
-              <span class="post-item__date">Coming soon</span>
-            </div>
-            <h3 class="post-item__title">What "Limited Spots Available" Actually Means (Usually)</h3>
-          </div>
-          <span class="post-item__arrow">→</span>
-        </a>
-
-        <!-- Post 8 -->
-        <a href="/blog/" class="post-item" data-cat="ethical-marketing">
-          <div>
-            <div class="post-item__meta">
-              <span class="post-item__cat">Ethical Marketing</span>
-              <span class="post-item__date">Coming soon</span>
-            </div>
-            <h3 class="post-item__title">The Best Sales Page I've Ever Seen — and What Made It Different</h3>
-          </div>
-          <span class="post-item__arrow">→</span>
-        </a>
-
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ============================================
        TRENDING + CATEGORIES
