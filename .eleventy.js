@@ -1,6 +1,12 @@
 module.exports = function(eleventyConfig) {
-  // Pass through your existing CSS/JS/images
   eleventyConfig.addPassthroughCopy("assets");
+
+  // Format dates nicely
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return new Date(dateObj).toLocaleDateString('en-US', {
+      year: 'numeric', month: 'long', day: 'numeric'
+    });
+  });
 
   return {
     dir: {
