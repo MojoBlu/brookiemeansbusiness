@@ -1,5 +1,6 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi.getFilteredByGlob("blog/*.md").reverse();
@@ -14,7 +15,7 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: ".",
-      output: "docs",
+      output: "_site",
       includes: "_includes"
     }
   };
