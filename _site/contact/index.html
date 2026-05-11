@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Brookie Means Business</title>
+  <meta name="description" content="Get in touch with Brookie — for general inquiries, speaking requests, or press. Brookie Means Business is based in Utah and available for speaking on persuasion literacy, invisible systems, and ethical influence." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700;1,9..144,900&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- FAQ schema for AEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Brookie available for speaking engagements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Brookie speaks on persuasion literacy, invisible systems in marketing and culture, ethical influence, and helping women make clearer decisions about how to live, work, and relate. She is based in Utah and available for both in-person and virtual events."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What topics does Brookie speak on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Brookie speaks on persuasion literacy, how to spot manipulative marketing tactics, ethical influence for business owners, invisible systems in consumer culture, and decision-making under pressure. She brings 20+ years of business experience and a direct, anti-guru perspective to every talk."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I contact Brookie Means Business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the contact form at brookiemeansbusiness.com/contact.html for general inquiries or speaking requests. Brookie reads every message personally."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --black: #1a2e1f;
+      --white: #f5f2ee;
+      --cream: #e8e4da;
+      --ink: #1a2e1f;
+      --accent: #c8441a;
+      --accent-light: #e8601a;
+      --mid: #5a6b5d;
+      --border: rgba(26,46,31,0.14);
+
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --font-mono: 'DM Mono', monospace;
+
+      --space-md: 2rem;
+      --space-lg: 4rem;
+      --space-xl: 7rem;
+      --max-width: 1200px;
+      --reading-width: 640px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--white);
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .label {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    /* ============================================
+       NAV
+    ============================================ */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+      transition: background 0.3s ease, backdrop-filter 0.3s ease;
+    }
+
+    .nav.scrolled {
+      background: rgba(245,242,238,0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav__logo {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.05rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .nav__links {
+      display: none;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav__links a {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink);
+      transition: color 0.2s;
+    }
+
+    .nav__links a:hover,
+    .nav__links a.active { color: var(--accent); }
+
+    .nav__cta {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: var(--ink);
+      color: var(--white);
+      padding: 0.55rem 1.1rem;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+
+    .nav__cta:hover { background: var(--accent); }
+
+    /* ============================================
+       HEADER
+    ============================================ */
+    .contact-header {
+      background: var(--ink);
+      color: var(--white);
+      padding: 9rem 0 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-header__bg {
+      position: absolute;
+      bottom: -2rem;
+      right: -1rem;
+      font-family: var(--font-display);
+      font-size: clamp(8rem, 30vw, 24rem);
+      font-weight: 900;
+      line-height: 1;
+      color: rgba(255,255,255,0.03);
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    .contact-header__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+    }
+
+    .contact-header__title {
+      font-family: var(--font-display);
+      font-size: clamp(4rem, 16vw, 11rem);
+      font-weight: 900;
+      line-height: 0.87;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-header__title em {
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(245,242,238,0.4);
+    }
+
+    .contact-header__sub {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(245,242,238,0.55);
+      max-width: 480px;
+      line-height: 1.5;
+    }
+
+    /* ============================================
+       BEFORE YOU WRITE — self-filter FAQ
+    ============================================ */
+    .self-filter {
+      background: var(--cream);
+      padding: var(--space-xl) 0;
+    }
+
+    .self-filter__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .self-filter__label { margin-bottom: 1rem; }
+
+    .self-filter__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .self-filter__headline em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--mid);
+    }
+
+    .self-filter__note {
+      font-size: 0.92rem;
+      color: var(--mid);
+      line-height: 1.7;
+      margin-top: 1.2rem;
+      max-width: 360px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .faq-item {
+      background: var(--cream);
+      overflow: hidden;
+    }
+
+    .faq-item__trigger {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1.5rem;
+      gap: 1rem;
+      align-items: center;
+      padding: 1.4rem 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.2s;
+    }
+
+    .faq-item__trigger:hover { background: var(--white); }
+    .faq-item.open .faq-item__trigger { background: var(--white); }
+
+    .faq-item__q {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+
+    .faq-item__icon {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: var(--accent);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .faq-item.open .faq-item__icon { transform: rotate(45deg); }
+
+    .faq-item__body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      background: var(--white);
+    }
+
+    .faq-item.open .faq-item__body {
+      max-height: 400px;
+    }
+
+    .faq-item__a {
+      font-size: 0.92rem;
+      line-height: 1.7;
+      color: var(--mid);
+      padding: 0 1.5rem 1.4rem;
+    }
+
+    .faq-item__a strong { color: var(--ink); }
+
+    .faq-item__a a {
+      color: var(--accent);
+      border-bottom: 1px solid rgba(200,68,26,0.3);
+      transition: border-color 0.2s;
+    }
+
+    .faq-item__a a:hover { border-color: var(--accent); }
+
+    /* ============================================
+       SPEAKING
+    ============================================ */
+    .speaking {
+      background: var(--white);
+      padding: var(--space-xl) 0;
+    }
+
+    .speaking__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .speaking__label { margin-bottom: 1rem; }
+
+    .speaking__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    .speaking__headline em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--mid);
+    }
+
+    .speaking__body {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--mid);
+      max-width: 460px;
+    }
+
+    .speaking__body strong { color: var(--ink); }
+    .speaking__body p + p { margin-top: 1rem; }
+
+    .topics-list {
+      list-style: none;
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+
+    .topic-item {
+      display: grid;
+      grid-template-columns: 1.5rem 1fr;
+      gap: 1rem;
+      align-items: start;
+      padding: 1.1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topic-item__bullet {
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      padding-top: 0.2rem;
+    }
+
+    .topic-item__text {
+      font-size: 0.95rem;
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    .topic-item__text em {
+      display: block;
+      font-style: normal;
+      font-size: 0.82rem;
+      color: var(--mid);
+      margin-top: 0.2rem;
+    }
+
+    /* ============================================
+       CONTACT FORM
+    ============================================ */
+    .contact-form-section {
+      background: var(--cream);
+      padding: var(--space-xl) 0;
+    }
+
+    .contact-form-section__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .contact-form-section__label { margin-bottom: 1rem; }
+
+    .contact-form-section__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.2rem;
+    }
+
+    .contact-form-section__headline em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--mid);
+    }
+
+    .contact-form-section__note {
+      font-size: 0.92rem;
+      color: var(--mid);
+      line-height: 1.7;
+    }
+
+    .contact-form-section__note strong { color: var(--ink); }
+
+    /* Social links */
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 1.2rem;
+      background: var(--cream);
+      transition: background 0.2s;
+    }
+
+    .social-link:hover { background: var(--ink); color: var(--white); }
+    .social-link:hover .social-link__arrow { color: var(--accent); }
+
+    .social-link__label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid);
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .social-link:hover .social-link__label { color: rgba(245,242,238,0.4); }
+
+    .social-link__name {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .social-link__arrow {
+      color: var(--accent);
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+
+    /* The form itself */
+    .form {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+    }
+
+    .form__type-selector {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+
+    .type-btn {
+      padding: 0.9rem 1rem;
+      background: var(--cream);
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid);
+      transition: all 0.2s;
+      text-align: center;
+    }
+
+    .type-btn.active,
+    .type-btn:hover {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .form__group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form__label {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .form__input,
+    .form__textarea,
+    .form__select {
+      width: 100%;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      padding: 0.85rem 1rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      color: var(--ink);
+      border-radius: 2px;
+      outline: none;
+      transition: border-color 0.2s;
+      appearance: none;
+    }
+
+    .form__input:focus,
+    .form__textarea:focus,
+    .form__select:focus { border-color: var(--accent); }
+
+    .form__input::placeholder,
+    .form__textarea::placeholder { color: var(--mid); opacity: 0.4; }
+
+    .form__textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    /* Speaking-specific fields — hidden by default */
+    .speaking-fields { display: none; }
+    .speaking-fields.visible { display: block; }
+
+    .form__submit {
+      width: 100%;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: var(--white);
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 0.5rem;
+    }
+
+    .form__submit:hover { background: var(--accent-light); }
+
+    .form__note {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: var(--mid);
+      opacity: 0.6;
+      text-align: center;
+      margin-top: 0.75rem;
+    }
+
+    /* Success state */
+    .form__success {
+      display: none;
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .form__success.visible { display: block; }
+
+    .form__success-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .form__success-headline {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--ink);
+    }
+
+    .form__success-sub {
+      font-size: 0.92rem;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    .footer {
+      background: var(--ink);
+      color: var(--white);
+      padding: var(--space-lg) 0 2rem;
+      border-top: 1px solid rgba(245,242,238,0.06);
+    }
+
+    .footer__top {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(245,242,238,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .footer__brand-name {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer__brand-desc {
+      font-size: 0.88rem;
+      color: rgba(245,242,238,0.4);
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer__nav-label {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(245,242,238,0.3);
+      margin-bottom: 1rem;
+    }
+
+    .footer__nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer__nav-links a {
+      font-size: 0.88rem;
+      color: rgba(245,242,238,0.5);
+      transition: color 0.2s;
+    }
+
+    .footer__nav-links a:hover { color: var(--white); }
+
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer__copy {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      color: rgba(245,242,238,0.2);
+    }
+
+    .footer__social {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer__social a {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(245,242,238,0.35);
+      transition: color 0.2s;
+    }
+
+    .footer__social a:hover { color: var(--accent); }
+
+    /* ============================================
+       SCROLL ANIMATIONS
+    ============================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+
+    /* ============================================
+       DESKTOP
+    ============================================ */
+    @media (min-width: 900px) {
+      .nav__links { display: flex; }
+
+      .self-filter__inner {
+        grid-template-columns: 1fr 1.4fr;
+        gap: 5rem;
+      }
+
+      .speaking__inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+      }
+
+      .contact-form-section__inner {
+        grid-template-columns: 1fr 1.3fr;
+        gap: 5rem;
+      }
+
+      .footer__top { grid-template-columns: 1.5fr 1fr 1fr; }
+      .footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a href="/" class="nav__logo">BMB</a>
+    <ul class="nav__links">
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/second-look.html">Second Look</a></li>
+      <li><a href="/contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="/#newsletter" class="nav__cta">Get the newsletter</a>
+  </nav>
+
+  <!-- ============================================
+       HEADER
+  ============================================ -->
+  <header class="contact-header" aria-label="Contact page header">
+    <div class="container" style="position:relative">
+      <span class="contact-header__bg" aria-hidden="true">HELLO</span>
+      <p class="contact-header__eyebrow">Get in touch</p>
+      <h1 class="contact-header__title">
+        LET'S<br>
+        <em>talk.</em>
+      </h1>
+      <p class="contact-header__sub">
+        Brookie reads every message personally. Response time is typically 2–4 business days.
+      </p>
+    </div>
+  </header>
+
+  <!-- ============================================
+       BEFORE YOU WRITE — self-filter FAQ
+  ============================================ -->
+  <section class="self-filter" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="self-filter__inner">
+        <div>
+          <p class="label self-filter__label reveal">Before you write</p>
+          <h2 class="self-filter__headline reveal reveal-delay-1" id="faq-heading">
+            Quick answers<br>
+            <em>that might save<br>us both time.</em>
+          </h2>
+          <p class="self-filter__note reveal reveal-delay-2">
+            Most common questions are answered here. If yours isn't, the form is right below — use it.
+          </p>
+        </div>
+        <div class="faq-list reveal reveal-delay-1" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__trigger" aria-expanded="false" aria-controls="faq-1">
+              <span class="faq-item__q">Can I pick your brain about persuasion literacy?</span>
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__body" id="faq-1" role="region">
+              <p class="faq-item__a">The blog and newsletter are the place for that — they're free, they're thorough, and they're designed exactly for this. <a href="/blog/">Start with the blog</a> or <a href="/#newsletter">get the newsletter</a>. If you have a specific question after that, feel free to write.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__trigger" aria-expanded="false" aria-controls="faq-2">
+              <span class="faq-item__q">I have a question about Second Look™.</span>
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__body" id="faq-2" role="region">
+              <p class="faq-item__a">Check the <a href="/second-look.html">Second Look page</a> first — most common questions are answered there, including how it works, what it catches, and pricing. If something's broken or you're having a technical issue, use the form below and mention "Second Look" in your message.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__trigger" aria-expanded="false" aria-controls="faq-3">
+              <span class="faq-item__q">Do you offer 1:1 coaching or consulting?</span>
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__body" id="faq-3" role="region">
+              <p class="faq-item__a"><strong>Not currently.</strong> BMB is focused on education and tools — the blog, the newsletter, and Second Look™. If that changes, it'll be announced in the newsletter first. <a href="/#newsletter">Get on the list.</a></p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__trigger" aria-expanded="false" aria-controls="faq-4">
+              <span class="faq-item__q">Can you analyze a specific sales page for me?</span>
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__body" id="faq-4" role="region">
+              <p class="faq-item__a">That's exactly what <a href="/second-look.html">Second Look™</a> is for — $27 for 100 analyses, run as many pages as you need. It's faster than waiting for a reply and you get the full breakdown instantly.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__trigger" aria-expanded="false" aria-controls="faq-5">
+              <span class="faq-item__q">Are you available for speaking?</span>
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__body" id="faq-5" role="region">
+              <p class="faq-item__a"><strong>Yes.</strong> Brookie speaks on persuasion literacy, invisible systems in marketing and culture, ethical influence, and decision-making under pressure. Based in Utah, available for in-person and virtual events. Use the contact form below and select "Speaking inquiry" — include your event date, format, and audience in your message.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__trigger" aria-expanded="false" aria-controls="faq-6">
+              <span class="faq-item__q">I want to collaborate / partner / guest post.</span>
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__body" id="faq-6" role="region">
+              <p class="faq-item__a">Genuine collaborations that serve the BMB audience are welcome. Pitches that are clearly templated, affiliate-only, or irrelevant to persuasion literacy are not. Be specific about what you have in mind and why it's a fit. Use the form below.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SPEAKING
+  ============================================ -->
+  <section class="speaking" aria-labelledby="speaking-heading">
+    <div class="container">
+      <div class="speaking__inner">
+        <div>
+          <p class="label speaking__label reveal">Speaking</p>
+          <h2 class="speaking__headline reveal reveal-delay-1" id="speaking-heading">
+            Bringing<br>
+            persuasion<br>
+            literacy<br>
+            <em>to your room.</em>
+          </h2>
+          <div class="speaking__body reveal reveal-delay-2">
+            <p>
+              Brookie speaks on the invisible systems that shape how people buy, work, and live — and how understanding those systems creates clearer, more autonomous decision-making.
+            </p>
+            <p>
+              <strong>Direct. A little irreverent. No guru energy.</strong> Audiences leave with frameworks they can use immediately, not just ideas to think about later.
+            </p>
+            <p>
+              Based in Utah. Available for in-person and virtual events. Use the contact form to inquire.
+            </p>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <ul class="topics-list">
+            <li class="topic-item">
+              <span class="topic-item__bullet">01</span>
+              <div class="topic-item__text">
+                Persuasion Literacy 101
+                <em>What it is, why it matters, and how to start seeing it in real time</em>
+              </div>
+            </li>
+            <li class="topic-item">
+              <span class="topic-item__bullet">02</span>
+              <div class="topic-item__text">
+                The Invisible Script
+                <em>How culture, marketing, and social pressure shape decisions we think we're making freely</em>
+              </div>
+            </li>
+            <li class="topic-item">
+              <span class="topic-item__bullet">03</span>
+              <div class="topic-item__text">
+                Ethical Influence for Business Owners
+                <em>How to be genuinely persuasive without crossing the line into manipulation</em>
+              </div>
+            </li>
+            <li class="topic-item">
+              <span class="topic-item__bullet">04</span>
+              <div class="topic-item__text">
+                Before You Buy: Reading Sales Pages Like a Pro
+                <em>Practical persuasion literacy for consumer decision-making</em>
+              </div>
+            </li>
+            <li class="topic-item">
+              <span class="topic-item__bullet">05</span>
+              <div class="topic-item__text">
+                Custom topics available
+                <em>Reach out with your audience and goals — let's build something specific</em>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT FORM
+  ============================================ -->
+  <section class="contact-form-section" id="contact-form" aria-labelledby="form-heading">
+    <div class="container">
+      <div class="contact-form-section__inner">
+        <div>
+          <p class="label contact-form-section__label reveal">Write to me</p>
+          <h2 class="contact-form-section__headline reveal reveal-delay-1" id="form-heading">
+            Still have<br>
+            <em>something<br>to say?</em>
+          </h2>
+          <p class="contact-form-section__note reveal reveal-delay-2">
+            <strong>Brookie reads every message personally.</strong> Response time is typically 2–4 business days. No autoresponder, no virtual assistant, no outsourced inbox.
+            <br><br>
+            If you're reaching out about Second Look™ support, include your order details. For speaking, include your event date and format.
+          </p>
+
+          <div class="social-links reveal" style="margin-top:2.5rem">
+            <a href="https://instagram.com/brookiemeansbusiness" target="_blank" rel="noopener" class="social-link">
+              <div>
+                <span class="social-link__label">Follow along</span>
+                <span class="social-link__name">Instagram</span>
+              </div>
+              <span class="social-link__arrow">→</span>
+            </a>
+            <a href="https://linkedin.com/in/brookecurnow" target="_blank" rel="noopener" class="social-link">
+              <div>
+                <span class="social-link__label">Connect professionally</span>
+                <span class="social-link__name">LinkedIn</span>
+              </div>
+              <span class="social-link__arrow">→</span>
+            </a>
+            <a href="/blog/" class="social-link">
+              <div>
+                <span class="social-link__label">Read weekly</span>
+                <span class="social-link__name">The Blog</span>
+              </div>
+              <span class="social-link__arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <div class="form" id="contact-form-wrap">
+
+            <!-- Inquiry type selector -->
+            <div class="form__type-selector" role="group" aria-label="Inquiry type">
+              <button class="type-btn active" data-type="general">General inquiry</button>
+              <button class="type-btn" data-type="speaking">Speaking inquiry</button>
+            </div>
+
+            <!-- The form -->
+            <!-- Replace action with your form handler (Formspree, Netlify Forms, etc.) -->
+            <form id="bmb-contact-form" action="https://formspree.io/f/xqenbeoa" method="POST" novalidate>
+              <input type="hidden" name="inquiry_type" id="inquiry-type-input" value="general" />
+
+              <div class="form__group">
+                <label class="form__label" for="name">Your name</label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="First name is fine" required />
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="email">Email address</label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="where I can reach you" required />
+              </div>
+
+              <!-- Speaking-specific fields -->
+              <div class="speaking-fields" id="speaking-fields">
+                <div class="form__group">
+                  <label class="form__label" for="event-type">Event type</label>
+                  <select class="form__select" id="event-type" name="event_type">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="conference">Conference / Summit</option>
+                    <option value="workshop">Workshop / Training</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="panel">Panel / Moderation</option>
+                    <option value="virtual">Virtual event</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="event-date">Approximate event date</label>
+                  <input class="form__input" type="text" id="event-date" name="event_date" placeholder="e.g. September 2026" />
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="audience">Tell me about your audience</label>
+                  <input class="form__input" type="text" id="audience" name="audience" placeholder="Who are they, how many?" />
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="message">Your message</label>
+                <textarea class="form__textarea" id="message" name="message" placeholder="What's on your mind?" required></textarea>
+              </div>
+
+              <!-- Honeypot — hidden from humans, catches bots -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+              <button type="submit" class="form__submit">Send it →</button>
+              <p class="form__note">No sales pitch incoming. Just a reply from Brookie.</p>
+            </form>
+
+            <!-- Success state (shown after submit) -->
+            <div class="form__success" id="form-success" aria-live="polite">
+              <div class="form__success-icon" aria-hidden="true">✓</div>
+              <h3 class="form__success-headline">Got it. Thank you.</h3>
+              <p class="form__success-sub">Brookie will read this personally and get back to you within 2–4 business days. In the meantime — <a href="/blog/" style="color:var(--accent)">the blog is right here</a>.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__brand-name">Brookie Means Business</p>
+          <p class="footer__brand-desc">Persuasion literacy for women rethinking the life they were told to want. Utah-based. Internet-distributed.</p>
+        </div>
+        <div>
+          <p class="footer__nav-label">Navigate</p>
+          <ul class="footer__nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/second-look.html">Second Look™</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__nav-label">Connect</p>
+          <ul class="footer__nav-links">
+            <li><a href="https://instagram.com/brookiemeansbusiness" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://linkedin.com/in/brookecurnow" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Brookie Means Business · Mojo Blu LLC · All rights reserved</p>
+        <div class="footer__social">
+          <a href="https://instagram.com/brookiemeansbusiness" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://linkedin.com/in/brookecurnow" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => observer.observe(el));
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-item__trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-item__trigger').setAttribute('aria-expanded', 'false');
+        });
+
+        // Open clicked if it was closed
+        if (!isOpen) {
+          item.classList.add('open');
+          trigger.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Inquiry type toggle
+    const typeBtns = document.querySelectorAll('.type-btn');
+    const speakingFields = document.getElementById('speaking-fields');
+    const inquiryTypeInput = document.getElementById('inquiry-type-input');
+
+    typeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        typeBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const type = btn.dataset.type;
+        inquiryTypeInput.value = type;
+
+        if (type === 'speaking') {
+          speakingFields.classList.add('visible');
+        } else {
+          speakingFields.classList.remove('visible');
+        }
+      });
+    });
+
+    // Form submit
+    // Replace this with your actual form handler (Formspree, Netlify Forms, etc.)
+    // For Formspree: set form action="https://formspree.io/f/YOUR_FORM_ID" and remove this JS handler
+    const form = document.getElementById('bmb-contact-form');
+const formSuccess = document.getElementById('form-success');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  // Basic validation
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (!name || !email || !message) return;
+
+  // Actually POST to Formspree
+  const response = await fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    form.style.display = 'none';
+    formSuccess.classList.add('visible');
+  } else {
+    // Optional: surface an error so it doesn't silently fail
+    alert('Something went wrong sending your message. Please try again or reach out on Instagram.');
+  }
+});
+  </script>
+
+</body>
+</html>
