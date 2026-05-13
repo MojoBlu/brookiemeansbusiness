@@ -256,6 +256,21 @@
       position: relative;
       overflow: hidden;
     }
+    .hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('./images/Utah-scenery.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
 
     .hero__eyebrow {
       font-family: var(--font-mono);
@@ -265,7 +280,7 @@
       color: rgba(245,242,238,0.5);
       margin-bottom: 1rem;
     }
-
+    
     .hero__name {
       font-family: var(--font-display);
       font-size: clamp(5rem, 22vw, 14rem);
@@ -1108,18 +1123,18 @@
   <!-- ============================================
        HERO
   ============================================ -->
-  <section class="hero" aria-label="Introduction">
-    <p class="hero__eyebrow">Brookie Means Business</p>
-    <h1 class="hero__name">BROOKIE</h1>
-    <p class="hero__title">
-      You were handed a script.<br>
-      <em>Nobody mentioned you could put it down.</em>
-    </p>
-    <div class="hero__cta-row">
-      <a href="#newsletter" class="btn btn--primary">Get the newsletter</a>
-      <a href="/second-look.html" class="btn btn--ghost">Try Second Look →</a>
-    </div>
-  </section>
+ <section class="hero" aria-label="Introduction" style="background-image: url('./images/Utah-scenery.jpg');">
+  <p class="hero__eyebrow">Brookie Means Business</p>
+  <h1 class="hero__name">BROOKIE</h1>
+  <p class="hero__title">
+    You were handed a script.<br>
+    <em>Nobody mentioned you could put it down.</em>
+  </p>
+  <div class="hero__cta-row">
+    <a href="#newsletter" class="btn btn--primary">Get the newsletter</a>
+    <a href="/second-look.html" class="btn btn--ghost">Try Second Look →</a>
+  </div>
+</section>
 
   <!-- ============================================
        MARQUEE
