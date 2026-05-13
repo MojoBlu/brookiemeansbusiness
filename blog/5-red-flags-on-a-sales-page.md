@@ -12,7 +12,7 @@ They happen because a sales page creates just enough urgency, hope, authority, a
 
 So before you hand over your card, here are five things worth checking.
 
-1. Fake urgency
+<b>1. Fake urgency</b>
 
 “Doors close tonight.”
 “Only 3 spots left.”
@@ -23,7 +23,7 @@ Sometimes urgency is real. But if the same countdown timer somehow resurrects ev
 Pause and ask:
 Is this deadline real, or is it there to rush my nervous system?
 
-2. Big promises with tiny proof
+<b>2. Big promises with tiny proof</b>
 
 Look for claims like:
 
@@ -36,7 +36,7 @@ Cute. Where are the receipts?
 Pause and ask:
 What specific evidence supports the claim?
 
-3. Vague transformation language
+<b>3. Vague transformation language</b>
 
 Words like “aligned,” “magnetic,” “abundant,” “high-ticket,” “next level,” and “unstoppable” can sound delicious while meaning absolutely nothing.
 
@@ -45,7 +45,7 @@ That doesn’t mean the offer is bad. It means you need translation.
 Pause and ask:
 What will I actually be able to do after this?
 
-4. The pain-point pile-on
+<b>4. The pain-point pile-on</b>
 
 A sales page should make you feel understood. It should not make you feel like a broken little raccoon with Wi-Fi.
 
@@ -54,7 +54,7 @@ If the page keeps poking your insecurity without giving clear, grounded informat
 Pause and ask:
 Do I feel informed, or do I feel emotionally cornered?
 
-5. An offer that's hard to explain
+<b>5. An offer that's hard to explain</b>
 
 If you can read the whole page and still not clearly answer:
 
