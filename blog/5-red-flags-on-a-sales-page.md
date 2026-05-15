@@ -12,7 +12,7 @@ They happen because a sales page creates just enough urgency, hope, authority, a
 
 So before you hand over your card, here are five things worth checking.
 
-<b>1. Fake urgency</b>
+<strong>1. Fake urgency</strong>
 
 “Doors close tonight.”
 “Only 3 spots left.”
