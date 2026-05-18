@@ -6,7 +6,7 @@ description: Why your brain keeps you subscribed to things you stopped using, an
 layout: post-layout.njk
 ---
 
-# The Membership You Can't Cancel
+## The Membership You Can't Cancel
 
 You weren't going to renew.
 
