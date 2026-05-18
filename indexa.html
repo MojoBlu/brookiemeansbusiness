@@ -1228,21 +1228,18 @@
        NAV
   ============================================ -->
   <nav class="nav" id="nav" aria-label="Main navigation">
-    <a href="/" class="nav__logo">BMB</a>
-    <ul class="nav__links">
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/second-look.html">Second Look</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-    </ul>
-    <a href="#newsletter" class="nav__cta">Get the newsletter</a>
-    <button class="nav__hamburger" id="nav-hamburger"
-      aria-expanded="false" aria-controls="nav-mobile-menu" aria-label="Open menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </nav>
+  <a href="/" class="nav__logo">BMB</a>
+  <ul class="nav__links">
+    ...
+  </ul>
+  <a href="#newsletter" class="nav__cta" id="nav-cta-desktop">Get the newsletter</a>
+  <button class="nav__hamburger" id="nav-hamburger"
+    aria-expanded="false" aria-controls="nav-mobile-menu" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
 
 <div class="nav__mobile-menu" id="nav-mobile-menu" role="dialog" aria-modal="true">
   <button class="nav__mobile-close" id="nav-mobile-close" aria-label="Close menu">
@@ -1597,41 +1594,41 @@
        JS: Nav scroll + Reveal animations
   ============================================ -->
   <script>
+// Hamburger toggle
+const hamburger = document.getElementById('nav-hamburger');
+const mobileMenu = document.getElementById('nav-mobile-menu');
+
+function openMenu() {
+  mobileMenu.classList.add('open');
+  hamburger.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMenu() {
+  mobileMenu.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+
+hamburger.addEventListener('click', () => {
+  hamburger.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu();
+  document.getElementById('nav-mobile-close').addEventListener('click', closeMenu);
+});
+
+// Close on any link click
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+// Close on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeMenu();
+});
     // Nav scroll state
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     }, { passive: true });
-
-    // Hamburger toggle
-    const hamburger = document.getElementById('nav-hamburger');
-    const mobileMenu = document.getElementById('nav-mobile-menu');
-
-    function openMenu() {
-      mobileMenu.classList.add('open');
-      hamburger.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeMenu() {
-      mobileMenu.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-
-    hamburger.addEventListener('click', () => {
-      hamburger.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu();
-    });
-
-    document.getElementById('nav-mobile-close').addEventListener('click', closeMenu);
-
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeMenu);
-    });
-
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') closeMenu();
-    });
 
     // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');

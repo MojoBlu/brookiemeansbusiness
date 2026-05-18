@@ -887,12 +887,9 @@
   <nav class="nav" id="nav" aria-label="Main navigation">
   <a href="/" class="nav__logo">BMB</a>
   <ul class="nav__links">
-    <li><a href="/about.html">About</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="/second-look.html">Second Look</a></li>
-    <li><a href="/contact.html">Contact</a></li>
+    ...
   </ul>
-  <a href="/#newsletter" class="nav__cta">Get the newsletter</a>
+  <a href="#newsletter" class="nav__cta" style="display:none" id="nav-cta-desktop">Get the newsletter</a>
   <button class="nav__hamburger" id="nav-hamburger"
     aria-expanded="false" aria-controls="nav-mobile-menu" aria-label="Open menu">
     <span></span>
@@ -1238,6 +1235,13 @@
 
   <script>
     // Show/hide desktop CTA based on viewport
+const navCtaDesktop = document.getElementById('nav-cta-desktop');
+function syncDesktopCta() {
+  navCtaDesktop.style.display = window.innerWidth >= 900 ? '' : 'none';
+}
+syncDesktopCta();
+window.addEventListener('resize', syncDesktopCta);
+
 // Hamburger toggle
 const hamburger = document.getElementById('nav-hamburger');
 const mobileMenu = document.getElementById('nav-mobile-menu');
@@ -1256,9 +1260,8 @@ function closeMenu() {
 
 hamburger.addEventListener('click', () => {
   hamburger.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu();
+  document.getElementById('nav-mobile-close').addEventListener('click', closeMenu);
 });
-
-document.getElementById('nav-mobile-close').addEventListener('click', closeMenu);
 
 // Close on any link click
 mobileMenu.querySelectorAll('a').forEach(link => {
