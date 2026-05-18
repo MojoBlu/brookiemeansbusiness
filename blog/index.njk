@@ -996,10 +996,10 @@
   ============================================ -->
   <section class="post-list" aria-labelledby="posts-label">
   <div class="container">
-    <p class="label" id="posts-label" style="margin-bottom:1.5rem">Latest posts</p>
+    <p class="label" id="posts-label" style="margin-bottom:1.5rem">All posts</p>
     <div class="post-list__grid" id="post-grid">
 
-      {% for post in collections.posts | reverse | limit(5) %}
+      {% for post in collections.posts %}
         <a href="/blog{{ post.url }}" class="post-item{% if loop.first or loop.index == 4 %} post-item--big{% endif %}" data-cat="{{ post.data.category or 'general' }}">
           <div>
             <div class="post-item__meta">
@@ -1037,7 +1037,7 @@
             <li class="trending-item reveal">
               <span class="trending-item__num">01</span>
               <div>
-                <p class="trending-item__title"><a href="/blog/what-is-persuasion-literacy/">What Is Persuasion Literacy — And Why It Changes Everything</a></p>
+                <p class="trending-item__title">What Is Persuasion Literacy — And Why It Changes Everything</p>
                 <p class="trending-item__cat">Persuasion 101</p>
               </div>
             </li>
@@ -1051,14 +1051,14 @@
             <li class="trending-item reveal reveal-delay-2">
               <span class="trending-item__num">03</span>
               <div>
-                <p class="trending-item__title"><a href="/blog/the-life-you-were-told-to-want/">The Life You Were Told to Want Didn't Come From Nowhere</a></p>
+                <p class="trending-item__title">The Life You Were Told to Want Didn't Come From Nowhere</p>
                 <p class="trending-item__cat">Invisible Systems</p>
               </div>
             </li>
             <li class="trending-item reveal reveal-delay-1">
               <span class="trending-item__num">04</span>
               <div>
-                <p class="trending-item__title"><a href="/blog/why-smart-people-fall-for-manipulative-marketing/">Why Smart People Still Fall for Manipulative Marketing</a></p>
+                <p class="trending-item__title">Why Smart People Still Fall for Manipulative Marketing</p>
                 <p class="trending-item__cat">Invisible Systems</p>
               </div>
             </li>
