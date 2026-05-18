@@ -1,5 +1,5 @@
 ---
-title: Cognitive Dissonance: Why You're Still Paying for That Membership
+title: "Cognitive Dissonance: Why You're Still Paying for That Membership"
 date: 2026-05-18
 category: Persuasion 101
 description: Why your brain keeps you subscribed to things you stopped using, and how to spot the difference between genuine value and guilt you can't cancel.
