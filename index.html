@@ -1172,6 +1172,9 @@
       }
     }
 
+    @media (max-width: 899px) {
+  .nav__cta { display: none; }
+}
     @media (min-width: 900px) {
       .nav__links { display: flex; }
       .nav__hamburger { display: none; }
@@ -1229,7 +1232,7 @@
   <ul class="nav__links">
     ...
   </ul>
-  <a href="#newsletter" class="nav__cta" style="display:none" id="nav-cta-desktop">Get the newsletter</a>
+  <a href="#newsletter" class="nav__cta" id="nav-cta-desktop">Get the newsletter</a>
   <button class="nav__hamburger" id="nav-hamburger"
     aria-expanded="false" aria-controls="nav-mobile-menu" aria-label="Open menu">
     <span></span>
@@ -1591,14 +1594,6 @@
        JS: Nav scroll + Reveal animations
   ============================================ -->
   <script>
-    // Show/hide desktop CTA based on viewport
-const navCtaDesktop = document.getElementById('nav-cta-desktop');
-function syncDesktopCta() {
-  navCtaDesktop.style.display = window.innerWidth >= 900 ? '' : 'none';
-}
-syncDesktopCta();
-window.addEventListener('resize', syncDesktopCta);
-
 // Hamburger toggle
 const hamburger = document.getElementById('nav-hamburger');
 const mobileMenu = document.getElementById('nav-mobile-menu');
