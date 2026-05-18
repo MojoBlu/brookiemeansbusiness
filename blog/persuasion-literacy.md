@@ -6,8 +6,6 @@ description: Persuasion literacy is the ability to recognize when and how influe
 layout: post-layout.njk
 ---
 
-# Persuasion Literacy: What It Is, Why It Matters, and Why Nobody Taught You This
-
 I was doing bookkeeping.
 
 Not glamorous. Not intentional. Just a Sunday afternoon, a cup of coffee going cold, and a spreadsheet that was starting to make me feel a little sick.
