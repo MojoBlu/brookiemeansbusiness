@@ -158,6 +158,94 @@
     }
 
     .nav__cta:hover { background: var(--accent); }
+    /* Hamburger button */
+.nav__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 200;
+  flex-shrink: 0;
+}
+
+.nav__hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform 0.28s ease, opacity 0.2s ease;
+  transform-origin: center;
+}
+
+/* Three lines → X animation */
+.nav__hamburger[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav__hamburger[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.nav__hamburger[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Full-screen mobile overlay */
+.nav__mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  background: var(--white);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem;
+}
+
+.nav__mobile-menu.open {
+  display: flex;
+}
+
+.nav__mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.nav__mobile-menu ul a {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 8vw, 3rem);
+  font-weight: 700;
+  color: var(--ink);
+  transition: color 0.2s;
+}
+
+.nav__mobile-menu ul a:hover { color: var(--accent); }
+
+.nav__mobile-menu .nav__mobile-cta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.nav__mobile-menu .nav__mobile-cta:hover { background: var(--accent); }
 
     /* ============================================
        HEADER
@@ -741,7 +829,8 @@
     ============================================ */
     @media (min-width: 900px) {
       .nav__links { display: flex; }
-
+      .nav__hamburger { display: none; }
+      .nav__mobile-menu { display: none !important; } 
       .self-filter__inner {
         grid-template-columns: 1fr 1.4fr;
         gap: 5rem;
@@ -770,15 +859,29 @@
 
   <!-- NAV -->
   <nav class="nav" id="nav" aria-label="Main navigation">
-    <a href="/" class="nav__logo">BMB</a>
-    <ul class="nav__links">
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/second-look.html">Second Look</a></li>
-      <li><a href="/contact.html" class="active">Contact</a></li>
-    </ul>
-    <a href="/#newsletter" class="nav__cta">Get the newsletter</a>
-  </nav>
+  <a href="/" class="nav__logo">BMB</a>
+  <ul class="nav__links">
+    ...
+  </ul>
+  <a href="#newsletter" class="nav__cta" style="display:none" id="nav-cta-desktop">Get the newsletter</a>
+  <button class="nav__hamburger" id="nav-hamburger"
+    aria-expanded="false" aria-controls="nav-mobile-menu" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Paste this immediately after </nav> -->
+<div class="nav__mobile-menu" id="nav-mobile-menu" role="dialog" aria-modal="true">
+  <ul>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/second-look.html">Second Look™</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+  <a href="#newsletter" class="nav__mobile-cta">Get the newsletter</a>
+</div>
 
   <!-- ============================================
        HEADER
@@ -1102,6 +1205,44 @@
   </footer>
 
   <script>
+    // Show/hide desktop CTA based on viewport
+const navCtaDesktop = document.getElementById('nav-cta-desktop');
+function syncDesktopCta() {
+  navCtaDesktop.style.display = window.innerWidth >= 900 ? '' : 'none';
+}
+syncDesktopCta();
+window.addEventListener('resize', syncDesktopCta);
+
+// Hamburger toggle
+const hamburger = document.getElementById('nav-hamburger');
+const mobileMenu = document.getElementById('nav-mobile-menu');
+
+function openMenu() {
+  mobileMenu.classList.add('open');
+  hamburger.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMenu() {
+  mobileMenu.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+
+hamburger.addEventListener('click', () => {
+  hamburger.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu();
+});
+
+// Close on any link click
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+// Close on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeMenu();
+});
+    
     // Nav scroll
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
