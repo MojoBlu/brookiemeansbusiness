@@ -999,7 +999,8 @@
     <p class="label" id="posts-label" style="margin-bottom:1.5rem">All posts</p>
     <div class="post-list__grid" id="post-grid">
 
-      {% for post in collections.posts | reverse | slice(0, 5) %}
+      {% for post in collections.posts | reverse %}
+  {% if loop.index <= 5 %}
         <a href="/blog{{ post.url }}" class="post-item{% if loop.first or loop.index == 4 %} post-item--big{% endif %}" data-cat="{{ post.data.category or 'general' }}">
           <div>
             <div class="post-item__meta">
@@ -1015,6 +1016,7 @@
         </a>
       {% else %}
         <p>No posts yet.</p>
+        {% endif %}
       {% endfor %}
 
     </div>
