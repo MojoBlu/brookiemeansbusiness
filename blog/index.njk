@@ -1129,24 +1129,27 @@
     <p class="label" id="posts-label" style="margin-bottom:1.5rem">All posts</p>
     <div class="post-list__grid" id="post-grid">
 
-      {% for post in collections.posts | reverse %}
-        {% if loop.index0 < 5 %}
-        <a href="/blog{{ post.url }}" class="post-item{% if loop.first or loop.index == 4 %} post-item--big{% endif %}" data-cat="{{ post.data.category or 'general' }}">
-          <div>
-            <div class="post-item__meta">
-              <span class="post-item__cat">{{ post.data.category or 'General' }}</span>
-              <span class="post-item__date">{{ post.date | readableDate }}</span>
+      {% if collections.posts and collections.posts.length %}
+        {% for post in collections.posts | reverse %}
+          {% if loop.index0 < 5 %}
+          <a href="/blog{{ post.url }}" class="post-item{% if loop.first or loop.index == 4 %} post-item--big{% endif %}" data-cat="{{ post.data.category or 'general' }}">
+            <div>
+              <div class="post-item__meta">
+                <span class="post-item__cat">{{ post.data.category or 'General' }}</span>
+                <span class="post-item__date">{{ post.date | readableDate }}</span>
+              </div>
+              <h3 class="post-item__title">{{ post.data.title }}</h3>
+              {% if post.data.excerpt %}
+                <p class="post-item__excerpt">{{ post.data.excerpt }}</p>
+              {% endif %}
             </div>
-            <h3 class="post-item__title">{{ post.data.title }}</h3>
-            {% if post.data.excerpt %}
-              <p class="post-item__excerpt">{{ post.data.excerpt }}</p>
-            {% endif %}
-          </div>
-          <span class="post-item__arrow">→</span>
-        </a>
+            <span class="post-item__arrow">→</span>
+          </a>
+          {% endif %}
+        {% endfor %}
       {% else %}
         <p>No posts yet.</p>
-      {% endfor %}
+      {% endif %}
 
     </div>
   </div>
@@ -1168,7 +1171,7 @@
             <li class="trending-item reveal">
               <span class="trending-item__num">01</span>
               <div>
-                <p class="trending-item__title"><a href="/blog/persuasion-literacy/">What Is Persuasion Literacy - And Why Nobody Taught You This</a></p>
+                <p class="trending-item__title"><a href="/blog/5-red-flags-on-a-sales-page/">What Is Persuasion Literacy - And Why Nobody Taught You This</a></p>
                 <p class="trending-item__cat">Persuasion 101</p>
               </div>
             </li>
