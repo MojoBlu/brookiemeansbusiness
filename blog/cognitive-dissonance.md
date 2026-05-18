@@ -6,7 +6,7 @@ description: Why your brain keeps you subscribed to things you stopped using, an
 layout: post-layout.njk
 ---
 
-# Cognitive Dissonance: Why You're Still Paying for That Membership You Never Open
+# The Membership You Can't Cancel
 
 You weren't going to renew.
 
