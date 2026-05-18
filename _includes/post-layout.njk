@@ -304,10 +304,10 @@
     "description": "{{ description }}",
     "datePublished": "{{ date | htmlDateString }}",
     "dateModified": "{{ date | htmlDateString }}",
-    "url": "{{ page.url | absoluteUrl(metadata.url) }}",
-    "mainEntityOfPage": {
+    "url": "https://brookiemeansbusiness.com{{ page.url }}",
+      "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "{{ page.url | absoluteUrl(metadata.url) }}"
+      "@id": "https://brookiemeansbusiness.com{{ page.url }}"
     },
     "author": {
       "@type": "Person",
@@ -323,7 +323,7 @@
   </script>
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="{{ page.url | absoluteUrl(metadata.url) }}" />
+  <link rel="canonical" href="https://brookiemeansbusiness.com{{ page.url }}" />
 </head>
 <body>
 

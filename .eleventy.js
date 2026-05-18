@@ -13,6 +13,10 @@ module.exports = function(eleventyConfig) {
     return new Date(dateObj).toISOString().split('T')[0];
   });
 
+  eleventyConfig.addFilter("absoluteUrl", (url, base) => {
+    return new URL(url, base).toString();
+  });
+
   return {
     dir: {
       input: "blog",
