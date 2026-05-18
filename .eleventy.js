@@ -9,6 +9,10 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return new Date(dateObj).toISOString().split('T')[0];
+  });
+
   return {
     dir: {
       input: "blog",
