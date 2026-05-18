@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }} — Brookie Means Business</title>
-  <meta name="description" content="{{ description or title }}" />
+  <meta name="description" content="{{ description }}" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -295,6 +295,35 @@
       .footer__bottom { flex-direction: row; justify-content: space-between; align-items: center; }
     }
   </style>
+  <!-- AEO: BlogPosting schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ title }}",
+    "description": "{{ description }}",
+    "datePublished": "{{ date | htmlDateString }}",
+    "dateModified": "{{ date | htmlDateString }}",
+    "url": "{{ page.url | absoluteUrl(metadata.url) }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absoluteUrl(metadata.url) }}"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Brookie",
+      "url": "{{ metadata.url }}/about.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Brookie Means Business",
+      "url": "{{ metadata.url }}"
+    }
+  }
+  </script>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ page.url | absoluteUrl(metadata.url) }}" />
 </head>
 <body>
 

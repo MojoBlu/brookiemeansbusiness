@@ -1,0 +1,8 @@
+BROOKIEMEANSBUSINESS/
+  _data/
+    metadata.json   ← new
+  _includes/
+  _site/
+  blog/
+  images/
+  ...
