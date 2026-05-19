@@ -14,7 +14,7 @@ That's social conditioning. And it didn't stop when you grew up.
 
 It followed you online, into your inbox, onto your sales pages, and straight into the way you evaluate whether something is worth buying, worth doing, or worth wanting in the first place.
 
-That doesn't mean you're naive. It means you're human, and you grew up in a world that was very invested in shaping your preferences.
+That doesn't mean you're naive. It means you're human, and you grew up in a world that was <i>very</i> invested in shaping your preferences.
 
 Today we're breaking down social conditioning: what it is, how it gets into your decision-making, and how to spot it before someone else uses it to steer you.
 

@@ -16,7 +16,7 @@ That might be pretty cool. It's something I can test.
 So that's what I did. And look how awesome it looks. I may keep doing these blockquotes since they're awesome.
 And then that's the end.
 
-Wait, I can totally add and image here.
+Wait, I can totally add an image here.
 
 <div class="container">
       <div class="intro-section__inner">
