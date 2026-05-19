@@ -2,7 +2,7 @@
 title: “Something To Test”
 date: 2026-05-19
 category: Second Look
-excerpt: This is the description of the post and what it's about.
+description: This is the description of the post and what it's about.
 layout: post-layout.njk
 ---
 
