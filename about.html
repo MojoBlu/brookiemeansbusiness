@@ -375,48 +375,6 @@
       position: relative;
     }
 
-    .photo-placeholder {
-      background: var(--cream);
-      aspect-ratio: 3/4;
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-start;
-      padding: 1.5rem;
-      border: 1px solid var(--border);
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* When you have a real photo, replace the placeholder div with:
-       <img src="/assets/images/brookie-headshot.jpg" alt="Brookie, founder of Brookie Means Business" loading="eager" />
-       and remove .photo-placeholder styles */
-
-    .photo-placeholder__text {
-      font-family: var(--font-display);
-      font-size: clamp(4rem, 14vw, 8rem);
-      font-weight: 900;
-      color: rgba(26,46,31,0.06);
-      line-height: 0.9;
-      position: absolute;
-      bottom: -0.5rem;
-      right: -0.5rem;
-      pointer-events: none;
-      user-select: none;
-    }
-
-    .photo-placeholder__label {
-      font-family: var(--font-mono);
-      font-size: 0.6rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--mid);
-      background: var(--white);
-      padding: 0.4rem 0.8rem;
-      border: 1px solid var(--border);
-      position: relative;
-      z-index: 1;
-    }
-
     .intro-section__content {}
 
     .intro-section__label { margin-bottom: 1.2rem; }
@@ -937,13 +895,9 @@
       <div class="intro-section__inner">
 
         <div class="photo-wrap reveal">
-          <div class="photo-placeholder">
-            <!-- Replace this entire div with your actual photo:
-            <img src="/assets/images/brookie-headshot.jpg"
+            <img src="/images/brookie-headshot.jpg"
                  alt="Brookie, founder of Brookie Means Business"
-                 loading="eager" /> -->
-            <span class="photo-placeholder__text" aria-hidden="true">B</span>
-            <span class="photo-placeholder__label">Photo coming soon</span>
+                 loading="eager" />
           </div>
         </div>
 
