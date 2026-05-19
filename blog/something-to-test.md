@@ -26,6 +26,8 @@ Wait, I can totally add and image here.
      alt="Brookie, founder of Brookie Means Business"
      loading="eager" />
         </div>
+        </div>
+</div>
 And now maybe this will work.
 Enjoy this test of the emergency blog system.
 
