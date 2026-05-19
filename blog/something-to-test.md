@@ -2,7 +2,7 @@
 title: “Something To Test”
 date: 2026-05-19
 category: Second Look
-description: This is the description of the post and what it's about.
+excerpt: This is the description of the post and what it's about.
 layout: post-layout.njk
 ---
 
@@ -21,7 +21,7 @@ Wait, I can totally add an image here.
 <img src="./images/hero-image-coffee.jpg"
     alt="Brookie, founder of Brookie Means Business"
     loading="eager" />
-    
+
 And now maybe this will work.
 Enjoy this test of the emergency blog system.
 
