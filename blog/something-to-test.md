@@ -18,13 +18,10 @@ And then that's the end.
 
 Wait, I can totally add an image here.
 
-<div class="container">
-      <div class="intro-section__inner">
-          <img src="./images/hero-image-coffee.jpg"
-     alt="Brookie, founder of Brookie Means Business"
-     loading="eager" />
-      </div>
-</div>
+<img src="./images/hero-image-coffee.jpg"
+    alt="Brookie, founder of Brookie Means Business"
+    loading="eager" />
+    
 And now maybe this will work.
 Enjoy this test of the emergency blog system.
 
