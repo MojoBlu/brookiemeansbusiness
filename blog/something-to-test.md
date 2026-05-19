@@ -20,7 +20,7 @@ Wait, I can totally add an image here.
 
 <img src="./images/hero-image-coffee.jpg"
     alt="Brookie, founder of Brookie Means Business"
-    loading="eager" />
+    loading="eager">
 
 And now maybe this will work.
 Enjoy this test of the emergency blog system.
