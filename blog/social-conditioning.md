@@ -22,7 +22,20 @@ Today we're breaking down social conditioning: what it is, how it gets into your
 
 ## The Tiny Moment
 
-<img src="https://brookiemeansbusiness.com/images/hero-image-coffee.jpg" alt="organized woman with coffee"> 
+<section class="intro-section" aria-label="Introduction">
+    <div class="container">
+      <div class="intro-section__inner">
+            <img src="/images/hero-image-coffee.jpg"
+                 alt="Organized woman with a coffee"
+                 loading="eager" />
+          </div>
+        </div>
+    
+        </div>
+    </div>
+</section>
+
+<img src="/images/hero-image-coffee.jpg" alt="organized woman with coffee"> 
 You're scrolling. You see a program. The sales page opens with a photo of a woman who looks calm, capable, organized. She has a clear workspace. Good lighting. She seems like she has figured out something you haven't yet.
 
 The offer is for a business coaching program. You weren't looking for one. But the page describes a version of you that somehow feels like the version you're "supposed" to be by now. More polished. More profitable. More... arrived.
