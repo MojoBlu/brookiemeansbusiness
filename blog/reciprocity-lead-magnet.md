@@ -68,6 +68,10 @@ The moment you notice yourself feeling vaguely obligated after receiving somethi
 Also worth noticing: did you seek out this freebie, or did it find you in an ad? Uninvited gifts carry reciprocity weight just the same as invited ones. That's the slightly uncomfortable part. Research confirms that people feel compelled to reciprocate favors whether or not they asked for the favor in the first place. Inc.
 You didn't ask for the mints. You still tipped more.
 
+<blockquote class="origin__pullquote reveal">
+       "The tell is the feeling of obligation showing up where genuine interest should be."
+     </blockquote>
+
 ---
 
 ## The Better Question
@@ -89,6 +93,10 @@ That last one is useful. Most lead magnets are not random acts of generosity. Th
 ## The Slowdown Script
 
 "This was a kind free resource, and I appreciated it. That doesn't mean I owe this person a purchase. Gratitude and obligation aren't the same thing. I'm going to evaluate this offer on its own merits: does it solve a real problem I have, is the price fair, and does this person have evidence they can deliver? The freebie goes in one column. The offer goes in another. I'm deciding from the second column."
+
+<blockquote class="origin__pullquote reveal">
+       "You're allowed to receive a free guide, enjoy it, and still decline the upsell without feeling like you committed some social crime."
+     </blockquote>
 
 ---
 
