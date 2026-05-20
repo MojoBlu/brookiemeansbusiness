@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ category }} — Brookie Means Business</title>
-  <meta name="description" content="{{ description }}" />
+  <title>“Something To Test” — Brookie Means Business</title>
+  <meta name="description" content="This is the description of the post and what it&#39;s about." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -374,9 +374,35 @@
       .footer__bottom { flex-direction: row; justify-content: space-between; align-items: center; }
     }
   </style>
+  <!-- AEO: BlogPosting schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "“Something To Test”",
+    "description": "This is the description of the post and what it&#39;s about.",
+    "datePublished": "2026-05-19",
+    "dateModified": "2026-05-19",
+    "url": "https://brookiemeansbusiness.com/something-to-test/",
+      "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://brookiemeansbusiness.com/something-to-test/"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Brookie",
+      "url": "/about.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Brookie Means Business",
+      "url": ""
+    }
+  }
+  </script>
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://brookiemeansbusiness.com{{ page.url }}" />
+  <link rel="canonical" href="https://brookiemeansbusiness.com/something-to-test/" />
 </head>
 <body>
 
@@ -406,23 +432,33 @@
     <a href="/#newsletter" class="mobile-menu__cta">Get the newsletter</a>
   </div>
 
-  <!-- CATEGORY PAGE -->
+  <!-- POST -->
   <main>
     <div class="container">
       <div class="post-header reveal">
         <a href="/blog/" class="post-back">← All posts</a>
         <span class="post-header__eyebrow">Brookie Means Business</span>
-        <h1 class="post-header__title">{{ category }}</h1>
-        <p class="post-header__meta">{{ collections.postsByCategory[category].length }} posts</p>
+        <h1 class="post-header__title">“Something To Test”</h1>
+       <p class="post-header__meta">May 18, 2026</p>
       </div>
-      <ul class="post-body reveal reveal-delay-1" style="list-style:none; padding:0;">
-        {% for post in collections.postsByCategory[category] %}
-        <li style="border-bottom: 1px solid var(--border); padding: 1.5rem 0;">
-          <a href="{{ post.url }}" style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--ink); text-decoration: none; line-height: 1.2; display: block; margin-bottom: 0.4rem;">{{ post.data.title }}</a>
-          <span style="font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid);">{{ post.date | readableDate }}</span>
-        </li>
-        {% endfor %}
-      </ul>
+      <div class="post-body reveal reveal-delay-1">
+        <p>The post starts here. I can add some text and then maybe add some cool text graphic thingee.
+That might be pretty cool. It's something I can test.</p>
+<blockquote class="origin__pullquote reveal">
+        "I wanted to put something here that would look like it was important. By people who knew exactly what they were doing."
+      </blockquote>
+<p>So that's what I did. And look how awesome it looks. I may keep doing these blockquotes since they're awesome.
+And then that's the end.</p>
+<p>Wait, I can totally add an image here.</p>
+<p><img src="/images/hero-image-coffee.jpg"
+    alt="Brookie, founder of Brookie Means Business" 
+    style="width: 30%; height: auto;"
+    loading="eager"></p>
+<p>And now maybe this will work.
+Enjoy this test of the emergency blog system.</p>
+<p>This is only a test.</p>
+
+      </div>
     </div>
   </main>
 
