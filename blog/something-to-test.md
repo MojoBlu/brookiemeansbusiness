@@ -19,7 +19,7 @@ And then that's the end.
 Wait, I can totally add an image here.
 
 <img src="/images/hero-image-coffee.jpg"
-    alt="Brookie, founder of Brookie Means Business" width="30%"
+    alt="Brookie, founder of Brookie Means Business" width="30%" height="30%"
     loading="eager">
 
 And now maybe this will work.
