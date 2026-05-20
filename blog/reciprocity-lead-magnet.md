@@ -7,11 +7,17 @@ layout: post-layout.njk
 ---
 
 You downloaded the free guide.
+
 It was fine. Maybe even good. You skimmed it, saved it to a folder you will never open again, and went about your life.
+
 Then the email showed up. Then three more. Then a webinar invite. Then a pitch for the course that "goes deeper" than the free guide. And somewhere in the back of your brain, a tiny, polite voice whispered: well, they did give you that free thing.
+
 You weren't planning to buy anything.
+
 But now "no" feels a little rude.
+
 That's not a character flaw. That's reciprocity doing exactly what it was built to do, just not necessarily for your benefit.
+
 Today we're breaking down the reciprocity principle: how it shows up in free lead magnets, where it hides, and how to spot it before a PDF you didn't ask for talks you into a $997 course.
 
 ---
@@ -19,10 +25,14 @@ Today we're breaking down the reciprocity principle: how it shows up in free lea
 ## The Tiny Moment
 
 Picture this: you're scrolling, minding your business, when an ad promises you a free "Roadmap to [Thing You Actually Want]." You think, sure, it's free. You hand over your email address. A PDF lands in your inbox.
+
 You read maybe 40% of it.
+
 A week later, you are on email number six in a nurture sequence. The emails are friendly. Warm, even. The sender feels like someone you know a little. They've been generous with you, after all. They gave you that roadmap.
+
 Then the pitch arrives. And even though you're not sure the offer is right for you, even though you haven't done anything with the free guide, even though you literally cannot find the folder you saved it to... something feels weird about saying no.
 They gave me something.
+
 That feeling? That's the whole plan.
 
 ---
@@ -41,13 +51,17 @@ Now imagine what a free 12-page PDF with a friendly welcome email sequence is de
 ## Where This Shows Up
 
 In the lead magnet world, reciprocity gets a full workout.
-The Free Guide / Ebook / Checklist
+
+<b>The Free Guide / Ebook / Checklist</b>
 This is the classic. You get value upfront, your brain logs a social debt, and the follow-up sales sequence arrives right on schedule to collect. The guide itself might be genuinely useful. That's almost beside the point by the time the pitch shows up.
-The Free Webinar
+
+<b>The Free Webinar</b>
 Technically free. Also 90 minutes of your life, a lot of rapport-building, and a hard close at the end. You've been given so much! A full training! For free! Surely the offer at the end is just... the natural next step. (This is intentional.)
-The Free Audit / Quiz / Assessment
+
+<b>The Free Audit / Quiz / Assessment</b>
 You answer some questions, get a personalized result, and suddenly someone has spent time analyzing your specific situation. It feels personal. It feels like they did something for you. Reciprocity activates harder when a gift feels tailored, which is exactly why these formats exist.
-The Ongoing Free Content (Newsletter, Podcast, Social Posts)
+
+<b>The Ongoing Free Content (Newsletter, Podcast, Social Posts)</b>
 This one is subtler. Over months of free value, a sense of relationship builds. When the offer finally comes, it doesn't feel like a pitch from a stranger. It feels like supporting someone you've come to know. Which might be fine, or might be a very long runway to a mediocre product. Hard to tell while you're inside it.
 The "I'm Not Even Selling Anything" Post
 Posted right before a launch. Always.
@@ -65,6 +79,7 @@ Watch for phrases like:
 "No strings attached." (Especially when followed by strings.)
 
 The moment you notice yourself feeling vaguely obligated after receiving something you didn't ask for, pause. That feeling is worth examining. Obligation is not the same thing as genuine interest. Gratitude is not the same thing as alignment.
+
 Also worth noticing: did you seek out this freebie, or did it find you in an ad? Uninvited gifts carry reciprocity weight just the same as invited ones. That's the slightly uncomfortable part. Research confirms that people feel compelled to reciprocate favors whether or not they asked for the favor in the first place. Inc.
 You didn't ask for the mints. You still tipped more.
 
@@ -103,9 +118,13 @@ That last one is useful. Most lead magnets are not random acts of generosity. Th
 ## The Second Look
 
 Reciprocity is one of the oldest and most effective principles in persuasion, because it works on something true: humans are social creatures who genuinely want to give back. The lead magnet format exists specifically because marketers know this, and to their credit, many of them use it honestly.
+
 But "honestly used" and "used on you without your awareness" are two different things. You're allowed to receive a free guide, enjoy it, and still decline the upsell without feeling like you committed some social crime.
+
 The tell is the feeling of obligation showing up where genuine interest should be.
+
 If a sales page has you hovering over the buy button but something feels a little off, run it through Second Look before you decide. Not because the offer is definitely wrong for you, but because you deserve to make that call from your own reasoning, not from the ghost of a PDF you saved six weeks ago and never finished.
+
 Slow down. Look twice. Then decide.
 
 ---
