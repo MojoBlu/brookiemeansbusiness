@@ -73,10 +73,12 @@ Posted right before a launch. Always.
 Here's the tell: the language around "free" things is rarely actually about the thing being free.
 Watch for phrases like:
 
-"I could charge for this but I'm giving it to you for free."
-"This is my gift to you."
-"I want to overdeliver before I ever ask for anything."
-"No strings attached." (Especially when followed by strings.)
+<ul>
+    <li>"I could charge for this but I'm giving it to you for free.",<li>
+    <li>"This is my gift to you."</li>
+    <li>"I want to overdeliver before I ever ask for anything."</li>
+    <li>"No strings attached." (Especially when followed by strings.)</li>
+</ul>
 
 The moment you notice yourself feeling vaguely obligated after receiving something you didn't ask for, pause. That feeling is worth examining. Obligation is not the same thing as genuine interest. Gratitude is not the same thing as alignment.
 
