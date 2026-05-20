@@ -40,10 +40,15 @@ That feeling? That's the whole plan.
 ## What's Happening in Your Brain
 
 In plain English: humans are wired to return favors. It's one of our oldest social survival mechanisms. Give and take keeps communities functioning. People who never reciprocate get socially penalized. Nobody likes a moocher, as Robert Cialdini, the psychologist who popularized this principle, put it bluntly in his foundational 1984 book Influence: The Psychology of Persuasion.
-Cialdini noted that we have very nasty names for people who take without giving back, words like "moochers" and "ingrates," and that as a result, we'll go to great lengths to give back once we've received something. Asu
+
+Cialdini noted that we have very nasty names for people who take without giving back, words like "moochers" and "ingrates," and that as a result, we'll go to great lengths to give back once we've received something.
+
 This is a genuinely good instinct. It's how humans build trust and cooperation. The problem is not that the instinct exists. The problem is when someone builds a checkout page around it.
-The research on this is almost uncomfortably clear. A study called "Sweetening the Till," published in the Journal of Applied Social Psychology, found that when restaurant servers left one mint with the check, tips went up 3%. Two mints? Tips increased 14%. When the server delivered the mints with a little extra personal touch, tips jumped 23%. Inc.
+
+The research on this is almost uncomfortably clear. A study called "Sweetening the Till," published in the Journal of Applied Social Psychology, found that when restaurant servers left one mint with the check, tips went up 3%. Two mints? Tips increased 14%. When the server delivered the mints with a little extra personal touch, tips jumped 23%.
+
 Two mints. Twenty-three percent.
+
 Now imagine what a free 12-page PDF with a friendly welcome email sequence is designed to do.
 
 ---
@@ -133,8 +138,10 @@ Slow down. Look twice. Then decide.
 
 ## Receipts
 
-Robert Cialdini, Influence: The Psychology of Persuasion (1984) — the foundational text on reciprocity and the six principles of persuasion
-Cialdini, Pre-Suasion (2016) — extended framework, added unity as a seventh principle
-"Sweetening the Till" — Strohmetz et al., Journal of Applied Social Psychology (2002) — the mint-and-tipping study
-Alvin Gouldner, "The Norm of Reciprocity" (1960) — the sociological paper that first formally described reciprocity as a social norm
-W. P. Carey School of Business / Knowledge@W. P. Carey — Cialdini interview series on the six principles
+<ul>
+    <li>Robert Cialdini, Influence: The Psychology of Persuasion (1984) — the foundational text on reciprocity and the six principles of persuasion</li>
+    <li>Cialdini, Pre-Suasion (2016) — extended framework, added unity as a seventh principle</li>
+    <li>"Sweetening the Till" — Strohmetz et al., Journal of Applied Social Psychology (2002) — the mint-and-tipping study</li>
+    <li>Alvin Gouldner, "The Norm of Reciprocity" (1960) — the sociological paper that first formally described reciprocity as a social norm</li>
+    <li>W. P. Carey School of Business / Knowledge@W. P. Carey — Cialdini interview series on the six principles</li>
+</ul>
