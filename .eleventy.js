@@ -17,10 +17,22 @@ module.exports = function(eleventyConfig) {
     return new URL(url, base).toString();
   });
 
+  eleventyConfig.addCollection("categories", function(collectionApi) {
+  const categoryMap = {};
+  collectionApi.getFilteredByGlob("blog/*.md").forEach(post => {
+    const cat = post.data.category;
+    if (cat) {
+      if (!categoryMap[cat]) categoryMap[cat] = [];
+      categoryMap[cat].push(post);
+    }
+  });
+  return categoryMap;
+});
+
   return {
     dir: {
       input: "blog",
-      output: "blog",
+      output: "site",
       includes: "../_includes"
     }
   };
